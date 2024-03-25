@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Kapitel 7 Tabeller | Tillämpad Statistik</title>
+  <meta name="description" content="Kapitel 7 Tabeller | Tillämpad Statistik" />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Kapitel 7 Tabeller | Tillämpad Statistik" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Kapitel 7 Tabeller | Tillämpad Statistik" />
+  
+  
+  
+
+<meta name="author" content="Ronnie Pingel, Valentin Zulj" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="kvantitativa-variabler.html"/>
+<link rel="next" href="figurer-1.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Tillämpad statistik</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduktion</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#om-statistisk-programmering-med-r"><i class="fa fa-check"></i><b>1.1</b> Om statistisk programmering med R</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#allmänna-tips-om-r-på-kursen"><i class="fa fa-check"></i><b>1.2</b> Allmänna tips om R på kursen</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#sammanfattning"><i class="fa fa-check"></i><b>1.3</b> Sammanfattning</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#referenser"><i class="fa fa-check"></i><b>1.4</b> Referenser</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html"><i class="fa fa-check"></i><b>2</b> Att börja använda R</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#installation-av-r-och-rstudio"><i class="fa fa-check"></i><b>2.1</b> Installation av R och RStudio</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#installation-av-r-på-macos"><i class="fa fa-check"></i><b>2.1.1</b> Installation av R på MacOS</a></li>
+<li class="chapter" data-level="2.1.2" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#installation-av-r-på-windows"><i class="fa fa-check"></i><b>2.1.2</b> Installation av R på Windows</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#installation-av-rstudio"><i class="fa fa-check"></i><b>2.2</b> Installation av RStudio</a></li>
+<li class="chapter" data-level="2.3" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#första-sessionen"><i class="fa fa-check"></i><b>2.3</b> Första sessionen</a></li>
+<li class="chapter" data-level="2.4" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#working-directory-ett-smidigt-sätt-att-spara-arbete"><i class="fa fa-check"></i><b>2.4</b> Working directory – ett smidigt sätt att spara arbete</a></li>
+<li class="chapter" data-level="2.5" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#paket"><i class="fa fa-check"></i><b>2.5</b> Paket</a></li>
+<li class="chapter" data-level="2.6" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#sammanfattning-1"><i class="fa fa-check"></i><b>2.6</b> Sammanfattning</a></li>
+<li class="chapter" data-level="2.7" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#övningar"><i class="fa fa-check"></i><b>2.7</b> Övningar</a>
+<ul>
+<li class="chapter" data-level="" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#övning-2.1"><i class="fa fa-check"></i>Övning 2.1</a></li>
+<li class="chapter" data-level="" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#övning-2.2"><i class="fa fa-check"></i>Övning 2.2</a></li>
+<li class="chapter" data-level="" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#övning-2.3"><i class="fa fa-check"></i>Övning 2.3</a></li>
+<li class="chapter" data-level="" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#övning-2.4"><i class="fa fa-check"></i>Övning 2.4</a></li>
+<li class="chapter" data-level="" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#övning-2.5"><i class="fa fa-check"></i>Övning 2.5</a></li>
+<li class="chapter" data-level="" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#övning-2.6"><i class="fa fa-check"></i>Övning 2.6</a></li>
+<li class="chapter" data-level="" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#övning-2.7"><i class="fa fa-check"></i>Övning 2.7</a></li>
+<li class="chapter" data-level="" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#övning-2.8"><i class="fa fa-check"></i>Övning 2.8</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html"><i class="fa fa-check"></i><b>3</b> Data, objekt och funktioner</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#data-och-objekt"><i class="fa fa-check"></i><b>3.1</b> Data och objekt</a></li>
+<li class="chapter" data-level="3.2" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#vektorer"><i class="fa fa-check"></i><b>3.2</b> Vektorer</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#vektorer-och-indexering"><i class="fa fa-check"></i><b>3.2.1</b> Vektorer och indexering</a></li>
+<li class="chapter" data-level="3.2.2" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#vektorer-och-logiska-operatorer"><i class="fa fa-check"></i><b>3.2.2</b> Vektorer och logiska operatorer</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#matriser"><i class="fa fa-check"></i><b>3.3</b> Matriser</a></li>
+<li class="chapter" data-level="3.4" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#data-frames"><i class="fa fa-check"></i><b>3.4</b> Data frames</a></li>
+<li class="chapter" data-level="3.5" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#funktioner"><i class="fa fa-check"></i><b>3.5</b> Funktioner</a></li>
+<li class="chapter" data-level="3.6" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#sammanfattning-2"><i class="fa fa-check"></i><b>3.6</b> Sammanfattning</a></li>
+<li class="chapter" data-level="3.7" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övningar-1"><i class="fa fa-check"></i><b>3.7</b> Övningar</a>
+<ul>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.1"><i class="fa fa-check"></i>Övning 3.1</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.2"><i class="fa fa-check"></i>Övning 3.2</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.3"><i class="fa fa-check"></i>Övning 3.3</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.4"><i class="fa fa-check"></i>Övning 3.4</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.5"><i class="fa fa-check"></i>Övning 3.5</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.6"><i class="fa fa-check"></i>Övning 3.6</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.7"><i class="fa fa-check"></i>Övning 3.7</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.8"><i class="fa fa-check"></i>Övning 3.8</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.9"><i class="fa fa-check"></i>Övning 3.9</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.10"><i class="fa fa-check"></i>Övning 3.10</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.11"><i class="fa fa-check"></i>Övning 3.11</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.12"><i class="fa fa-check"></i>Övning 3.12</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.13"><i class="fa fa-check"></i>Övning 3.13</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.14"><i class="fa fa-check"></i>Övning 3.14</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html"><i class="fa fa-check"></i><b>4</b> Läsa in och spara data</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#principer-för-organiserade-datamaterial"><i class="fa fa-check"></i><b>4.1</b> Principer för organiserade datamaterial</a></li>
+<li class="chapter" data-level="4.2" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#läsa-in-datamaterial-med-hjälp-av-kod"><i class="fa fa-check"></i><b>4.2</b> Läsa in datamaterial med hjälp av kod</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#text--och-csv-filer"><i class="fa fa-check"></i><b>4.2.1</b> Text- och CSV-filer</a></li>
+<li class="chapter" data-level="4.2.2" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#excel-filer"><i class="fa fa-check"></i><b>4.2.2</b> Excel-filer</a></li>
+<li class="chapter" data-level="4.2.3" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#övriga-format"><i class="fa fa-check"></i><b>4.2.3</b> Övriga format</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#läsa-in-datamaterial-med-hjälp-av-menyerna-i-rstudio"><i class="fa fa-check"></i><b>4.3</b> Läsa in datamaterial med hjälp av menyerna i RStudio</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#läsa-in-data-från-working-directory"><i class="fa fa-check"></i><b>4.3.1</b> Läsa in data från working directory</a></li>
+<li class="chapter" data-level="4.3.2" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#läsa-in-data-med-import-dataset"><i class="fa fa-check"></i><b>4.3.2</b> Läsa in data med “Import Dataset”</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#spara-datamaterial-med-hjälp-av-r"><i class="fa fa-check"></i><b>4.4</b> Spara datamaterial med hjälp av R</a></li>
+<li class="chapter" data-level="4.5" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#övningar-2"><i class="fa fa-check"></i><b>4.5</b> Övningar</a>
+<ul>
+<li class="chapter" data-level="" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#övning-4.1"><i class="fa fa-check"></i>Övning 4.1</a></li>
+<li class="chapter" data-level="" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#övning-4.2"><i class="fa fa-check"></i>Övning 4.2</a></li>
+<li class="chapter" data-level="" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#övning-4.3"><i class="fa fa-check"></i>Övning 4.3</a></li>
+<li class="chapter" data-level="" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#övning-4.4"><i class="fa fa-check"></i>Övning 4.4</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="kategorivariabler.html"><a href="kategorivariabler.html"><i class="fa fa-check"></i><b>5</b> Kategorivariabler</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="kategorivariabler.html"><a href="kategorivariabler.html#en-binär-variabel"><i class="fa fa-check"></i><b>5.1</b> En binär variabel</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="kategorivariabler.html"><a href="kategorivariabler.html#kodning"><i class="fa fa-check"></i><b>5.1.1</b> Kodning</a></li>
+<li class="chapter" data-level="5.1.2" data-path="kategorivariabler.html"><a href="kategorivariabler.html#tabeller-och-figurer"><i class="fa fa-check"></i><b>5.1.2</b> Tabeller och figurer</a></li>
+<li class="chapter" data-level="5.1.3" data-path="kategorivariabler.html"><a href="kategorivariabler.html#inferens"><i class="fa fa-check"></i><b>5.1.3</b> Inferens</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="kategorivariabler.html"><a href="kategorivariabler.html#två-binära-variabler"><i class="fa fa-check"></i><b>5.2</b> Två binära variabler</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="kategorivariabler.html"><a href="kategorivariabler.html#tabeller"><i class="fa fa-check"></i><b>5.2.1</b> Tabeller</a></li>
+<li class="chapter" data-level="5.2.2" data-path="kategorivariabler.html"><a href="kategorivariabler.html#kvantifiering-av-samband"><i class="fa fa-check"></i><b>5.2.2</b> Kvantifiering av samband</a></li>
+<li class="chapter" data-level="5.2.3" data-path="kategorivariabler.html"><a href="kategorivariabler.html#figurer"><i class="fa fa-check"></i><b>5.2.3</b> Figurer</a></li>
+<li class="chapter" data-level="5.2.4" data-path="kategorivariabler.html"><a href="kategorivariabler.html#inferens-1"><i class="fa fa-check"></i><b>5.2.4</b> Inferens</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="kategorivariabler.html"><a href="kategorivariabler.html#tre-kategorier-eller-fler"><i class="fa fa-check"></i><b>5.3</b> Tre kategorier eller fler</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="kategorivariabler.html"><a href="kategorivariabler.html#kodning-1"><i class="fa fa-check"></i><b>5.3.1</b> Kodning</a></li>
+<li class="chapter" data-level="5.3.2" data-path="kategorivariabler.html"><a href="kategorivariabler.html#tabeller-och-figurer-1"><i class="fa fa-check"></i><b>5.3.2</b> Tabeller och figurer</a></li>
+<li class="chapter" data-level="5.3.3" data-path="kategorivariabler.html"><a href="kategorivariabler.html#inferens-2"><i class="fa fa-check"></i><b>5.3.3</b> Inferens</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="kategorivariabler.html"><a href="kategorivariabler.html#samband-mellan-kategorivariabler"><i class="fa fa-check"></i><b>5.4</b> Samband mellan kategorivariabler</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="kategorivariabler.html"><a href="kategorivariabler.html#tabeller-och-figurer-2"><i class="fa fa-check"></i><b>5.4.1</b> Tabeller och figurer</a></li>
+<li class="chapter" data-level="5.4.2" data-path="kategorivariabler.html"><a href="kategorivariabler.html#inferens-3"><i class="fa fa-check"></i><b>5.4.2</b> Inferens</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="kategorivariabler.html"><a href="kategorivariabler.html#programmeringsuppgifter"><i class="fa fa-check"></i><b>5.5</b> Programmeringsuppgifter</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="kategorivariabler.html"><a href="kategorivariabler.html#uppgift-1"><i class="fa fa-check"></i><b>5.5.1</b> Uppgift 1</a></li>
+<li class="chapter" data-level="5.5.2" data-path="kategorivariabler.html"><a href="kategorivariabler.html#uppgift-2"><i class="fa fa-check"></i><b>5.5.2</b> Uppgift 2</a></li>
+<li class="chapter" data-level="5.5.3" data-path="kategorivariabler.html"><a href="kategorivariabler.html#uppgift-3"><i class="fa fa-check"></i><b>5.5.3</b> Uppgift 3</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="kategorivariabler.html"><a href="kategorivariabler.html#referenser-1"><i class="fa fa-check"></i><b>5.6</b> Referenser</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html"><i class="fa fa-check"></i><b>6</b> Kvantitativa variabler</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html#analys-av-en-kvantitativ-variabel"><i class="fa fa-check"></i><b>6.1</b> Analys av en kvantitativ variabel</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html#enklare-deskriptiva-mått"><i class="fa fa-check"></i><b>6.1.1</b> Enklare deskriptiva mått</a></li>
+<li class="chapter" data-level="6.1.2" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html#frekvenstabeller"><i class="fa fa-check"></i><b>6.1.2</b> Frekvenstabeller</a></li>
+<li class="chapter" data-level="6.1.3" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html#histogram"><i class="fa fa-check"></i><b>6.1.3</b> Histogram</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html#analys-av-två-kvantitativa-variabler"><i class="fa fa-check"></i><b>6.2</b> Analys av två kvantitativa variabler</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html#två-kontinuerliga-variabler"><i class="fa fa-check"></i><b>6.2.1</b> Två kontinuerliga variabler</a></li>
+<li class="chapter" data-level="6.2.2" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html#en-kontinuerlig-och-en-diskret-variabel"><i class="fa fa-check"></i><b>6.2.2</b> En kontinuerlig och en diskret variabel</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html#övningsuppgifter"><i class="fa fa-check"></i><b>6.3</b> Övningsuppgifter</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html#uppgift-1-1"><i class="fa fa-check"></i><b>6.3.1</b> Uppgift 1</a></li>
+<li class="chapter" data-level="6.3.2" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html#uppgift-2-1"><i class="fa fa-check"></i><b>6.3.2</b> Uppgift 2</a></li>
+<li class="chapter" data-level="6.3.3" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html#uppgift-3-1"><i class="fa fa-check"></i><b>6.3.3</b> Uppgift 3</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html#referenser-2"><i class="fa fa-check"></i><b>6.4</b> Referenser</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="tabeller-1.html"><a href="tabeller-1.html"><i class="fa fa-check"></i><b>7</b> Tabeller</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="tabeller-1.html"><a href="tabeller-1.html#principer-för-tabeller"><i class="fa fa-check"></i><b>7.1</b> Principer för tabeller</a></li>
+<li class="chapter" data-level="7.2" data-path="tabeller-1.html"><a href="tabeller-1.html#exportera-tabell-till-html-fil"><i class="fa fa-check"></i><b>7.2</b> Exportera tabell till HTML-fil</a></li>
+<li class="chapter" data-level="7.3" data-path="tabeller-1.html"><a href="tabeller-1.html#paket-för-tabeller"><i class="fa fa-check"></i><b>7.3</b> Paket för tabeller</a></li>
+<li class="chapter" data-level="7.4" data-path="tabeller-1.html"><a href="tabeller-1.html#övningsuppgifter-1"><i class="fa fa-check"></i><b>7.4</b> Övningsuppgifter</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="tabeller-1.html"><a href="tabeller-1.html#uppgift-1-2"><i class="fa fa-check"></i><b>7.4.1</b> Uppgift 1</a></li>
+<li class="chapter" data-level="7.4.2" data-path="tabeller-1.html"><a href="tabeller-1.html#uppgift-2-2"><i class="fa fa-check"></i><b>7.4.2</b> Uppgift 2</a></li>
+<li class="chapter" data-level="7.4.3" data-path="tabeller-1.html"><a href="tabeller-1.html#uppgift-3-2"><i class="fa fa-check"></i><b>7.4.3</b> Uppgift 3</a></li>
+<li class="chapter" data-level="7.4.4" data-path="tabeller-1.html"><a href="tabeller-1.html#uppgift-4"><i class="fa fa-check"></i><b>7.4.4</b> Uppgift 4</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="figurer-1.html"><a href="figurer-1.html"><i class="fa fa-check"></i><b>8</b> Figurer</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="figurer-1.html"><a href="figurer-1.html#estetik"><i class="fa fa-check"></i><b>8.1</b> Estetik</a></li>
+<li class="chapter" data-level="8.2" data-path="figurer-1.html"><a href="figurer-1.html#grundläggande-figurhantering"><i class="fa fa-check"></i><b>8.2</b> Grundläggande figurhantering</a></li>
+<li class="chapter" data-level="8.3" data-path="figurer-1.html"><a href="figurer-1.html#färger-och-figurer"><i class="fa fa-check"></i><b>8.3</b> Färger och figurer</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="figurer-1.html"><a href="figurer-1.html#presentation-av-aggregerade-data"><i class="fa fa-check"></i><b>8.3.1</b> Presentation av aggregerade data</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="figurer-1.html"><a href="figurer-1.html#cirkeldigram"><i class="fa fa-check"></i><b>8.4</b> Cirkeldigram</a></li>
+<li class="chapter" data-level="8.5" data-path="figurer-1.html"><a href="figurer-1.html#figurer-för-fördelningar"><i class="fa fa-check"></i><b>8.5</b> Figurer för fördelningar</a></li>
+<li class="chapter" data-level="8.6" data-path="figurer-1.html"><a href="figurer-1.html#lådagram-1"><i class="fa fa-check"></i><b>8.6</b> Lådagram</a></li>
+<li class="chapter" data-level="8.7" data-path="figurer-1.html"><a href="figurer-1.html#spridningsdiagram-1"><i class="fa fa-check"></i><b>8.7</b> Spridningsdiagram</a></li>
+<li class="chapter" data-level="8.8" data-path="figurer-1.html"><a href="figurer-1.html#exportera-figurer"><i class="fa fa-check"></i><b>8.8</b> Exportera figurer</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Tillämpad Statistik</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="tabeller-1" class="section level1 hasAnchor" number="7">
+<h1><span class="header-section-number">Kapitel 7</span> Tabeller<a href="tabeller-1.html#tabeller-1" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<style>
+body {
+text-align: justify}
+</style>
+<p>Diskreta variabler förekommer ofta i statistisk dataanalys. En betydande del av programmeringsblocket har handlat om diskreta variabler, hur de bäst beskrivs i tabeller och hur de kan illustreras med hjälp av diagram. Detta kapitel syftar till att underlätta hanteringen av de tabeller som diskuterats tidigare och tar diskuterar därför kortfattat formalia kring tabeller, till exempel hur de bör struktureras och på vilket sätt de bäst inkluderas i en rapport. Kapitlet avslutas med ett exempel som visar hur en tabell smidigt kan exporteras från <code>R</code> för att användas i ett Word-dokument.</p>
+<div id="principer-för-tabeller" class="section level2 hasAnchor" number="7.1">
+<h2><span class="header-section-number">7.1</span> Principer för tabeller<a href="tabeller-1.html#principer-för-tabeller" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>I princip gäller att sunt förnuft bör tillämpas vid konstruktion och användning av tabeller av olika slag. Naturligtvis ska allt som står i en tabell gå att läsa och vara relevant. Många gånger är det lätt att inkludera information som inte är relevant för analysen av bara farten, men detta skapar nästan alltid förvirring och det blir för läsaren oklart varför onödig information inkluderats.</p>
+<p>Vid arbete med inlämnings- och seminarieuppgifter under kursens gång rekommenderas att nedan punkter tas i beaktande när tabeller ska användas.</p>
+<ul>
+<li>Tabellrubriker placeras ovanför tabeller.</li>
+<li>Tabellrubriker ska enkelt förklara för läsaren vad tabellen syftar till att beskriva, men ska inte nödvändigtvis innehålla detaljer. Detaljer gör sig oftast bättre i själva tabellen.</li>
+<li>Tabellen ska vara självförklarande.</li>
+<li>Tabellresultat ska alltid att beskrivas i text, med hänvisning till tabellen.</li>
+<li>Undvik att ha alltför många linjer i tabeller. Ofta räcker faktiskt tre horisontella linjer - en ovanför kolumnnamnen, en under kolumnnamnen och en nedanför sista raden.</li>
+</ul>
+</div>
+<div id="exportera-tabell-till-html-fil" class="section level2 hasAnchor" number="7.2">
+<h2><span class="header-section-number">7.2</span> Exportera tabell till HTML-fil<a href="tabeller-1.html#exportera-tabell-till-html-fil" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Alla rapporter eller vetenskapliga artiklar bör inkludera en beskrivning av urvalet, dvs variablernas fördelning i stickprovet. Frågan som då besvaras är “Vilka är det vi vi undersöker?”. Ibland är denna beskrivning placeread i början av rapporten eller arikeln, och ibland i en bilaga i slutet av rapporten. Observera att syftet <strong>inte</strong> är att göra inferens, utan enbart att beskriva de observationer som finns i urvalet. Detta innebär normalt sett att medelfel, konfidensintervall eller <span class="math inline">\(p\)</span>-värden inte redovisas i denna tabell.</p>
+<p>I Kapitel 5 diskuterades utförligt hur <code>R</code> kan användas för att skapa tabeller som innehåller olika typer av information om en eller flera variabler i ett stickprov. Tanken bakom tabellerna är nästan alltid att de ska inkluderas i någon sorts rapport, och de behöver därför exporteras till t.ex. ett Word-dokument och snyggas till. Denna export kan göras manuellt, men det finns två stora nackdelar (risker) med en sådan approach.</p>
+<ol style="list-style-type: decimal">
+<li>Om tabellerna är väldigt stora, alltså innehåller väldigt många mått eller variabler, är det mycket tidskrävande att exportera tabellerna värde för värde.</li>
+<li>När tabeller exporteras manuellt är det väldigt lätt att något går fel. Värden kan till exempel hamna i fel cell, kommatecken kan hamna på fel ställe, och det är lätt att råka skriva fel siffra någonstans.</li>
+</ol>
+<p>För att minimera dessa risker kan <code>R</code> användas för att exportera tabeller i sin helhet, som sedan kan snyggas till i den ordbehandlare som används. Resten av detta ägnas åt ett exempel som ämnar visa på ett sätt att göra detta. För enkelhetens skull används samma datamaterial som i Kapitel 6. Gå därför tillbaka och kopiera in koden med datamaterialet till ditt nuvarande script, så att du kan följa med i exemplet.</p>
+<p>För att komplettera en studie är det önskvärt att skapa en tabell som visar stickprovsmedelvärde, stickprovsstandardavvikelse, median, minsta värde och största värde för var och en av de tre variablerna i datamaterialet. En sådan tabell skapas enkelt med koden nedan.</p>
+<div class="sourceCode" id="cb364"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb364-1"><a href="tabeller-1.html#cb364-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Sammanfattning av variabeln fev</span></span>
+<span id="cb364-2"><a href="tabeller-1.html#cb364-2" aria-hidden="true" tabindex="-1"></a>fev_summary <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">mean</span>(fev), <span class="fu">sd</span>(fev), <span class="fu">median</span>(fev), <span class="fu">min</span>(fev), <span class="fu">max</span>(fev))</span>
+<span id="cb364-3"><a href="tabeller-1.html#cb364-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb364-4"><a href="tabeller-1.html#cb364-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Sammanfattning av variabeln age</span></span>
+<span id="cb364-5"><a href="tabeller-1.html#cb364-5" aria-hidden="true" tabindex="-1"></a>age_summary <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">mean</span>(age), <span class="fu">sd</span>(age), <span class="fu">median</span>(age), <span class="fu">min</span>(age), <span class="fu">max</span>(age))</span>
+<span id="cb364-6"><a href="tabeller-1.html#cb364-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb364-7"><a href="tabeller-1.html#cb364-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Sammanfattning av variabeln height</span></span>
+<span id="cb364-8"><a href="tabeller-1.html#cb364-8" aria-hidden="true" tabindex="-1"></a>height_summary <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fu">mean</span>(height), <span class="fu">sd</span>(height), <span class="fu">median</span>(height), <span class="fu">min</span>(height), <span class="fu">max</span>(height))</span>
+<span id="cb364-9"><a href="tabeller-1.html#cb364-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb364-10"><a href="tabeller-1.html#cb364-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Gör varje vektor till en rad</span></span>
+<span id="cb364-11"><a href="tabeller-1.html#cb364-11" aria-hidden="true" tabindex="-1"></a>tab_summary <span class="ot">&lt;-</span> <span class="fu">rbind</span>(fev_summary, age_summary, height_summary)</span>
+<span id="cb364-12"><a href="tabeller-1.html#cb364-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb364-13"><a href="tabeller-1.html#cb364-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Skriver ut matris/tabell</span></span>
+<span id="cb364-14"><a href="tabeller-1.html#cb364-14" aria-hidden="true" tabindex="-1"></a>tab_summary</span>
+<span id="cb364-15"><a href="tabeller-1.html#cb364-15" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span>                     [,<span class="dv">1</span>]      [,<span class="dv">2</span>]    [,<span class="dv">3</span>]   [,<span class="dv">4</span>]   [,<span class="dv">5</span>]</span>
+<span id="cb364-16"><a href="tabeller-1.html#cb364-16" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> fev_summary     <span class="fl">2.636780</span> <span class="fl">0.8670591</span>  <span class="fl">2.5475</span>  <span class="fl">0.791</span>  <span class="fl">5.793</span></span>
+<span id="cb364-17"><a href="tabeller-1.html#cb364-17" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> age_summary     <span class="fl">9.931193</span> <span class="fl">2.9539352</span> <span class="fl">10.0000</span>  <span class="fl">3.000</span> <span class="fl">19.000</span></span>
+<span id="cb364-18"><a href="tabeller-1.html#cb364-18" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> height_summary <span class="fl">61.143578</span> <span class="fl">5.7035128</span> <span class="fl">61.5000</span> <span class="fl">46.000</span> <span class="fl">74.000</span></span></code></pre></div>
+<p>Eftersom tabellen ska synas i en rapport är det önsvärt att snygga till den genom att lägga till rad- och kolumnnamn. Detta görs med koden nedan.</p>
+<div class="sourceCode" id="cb365"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb365-1"><a href="tabeller-1.html#cb365-1" aria-hidden="true" tabindex="-1"></a><span class="fu">rownames</span>(tab_summary) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;FEV (liter/sek)&quot;</span>, <span class="st">&quot;Ålder&quot;</span>, <span class="st">&quot;Längd (tum)&quot;</span>)</span>
+<span id="cb365-2"><a href="tabeller-1.html#cb365-2" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(tab_summary) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;Medelvärde&quot;</span>, <span class="st">&quot;Std. Avv.&quot;</span>, <span class="st">&quot;Median&quot;</span>, <span class="st">&quot;Min&quot;</span>, <span class="st">&quot;Max&quot;</span>)</span>
+<span id="cb365-3"><a href="tabeller-1.html#cb365-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb365-4"><a href="tabeller-1.html#cb365-4" aria-hidden="true" tabindex="-1"></a>tab_summary</span>
+<span id="cb365-5"><a href="tabeller-1.html#cb365-5" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span>                 Medelvärde Std. Avv.  Median    Min    Max</span>
+<span id="cb365-6"><a href="tabeller-1.html#cb365-6" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="fu">FEV</span> (liter<span class="sc">/</span>sek)   <span class="fl">2.636780</span> <span class="fl">0.8670591</span>  <span class="fl">2.5475</span>  <span class="fl">0.791</span>  <span class="fl">5.793</span></span>
+<span id="cb365-7"><a href="tabeller-1.html#cb365-7" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> Ålder             <span class="fl">9.931193</span> <span class="fl">2.9539352</span> <span class="fl">10.0000</span>  <span class="fl">3.000</span> <span class="fl">19.000</span></span>
+<span id="cb365-8"><a href="tabeller-1.html#cb365-8" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> Längd (tum)      <span class="fl">61.143578</span> <span class="fl">5.7035128</span> <span class="fl">61.5000</span> <span class="fl">46.000</span> <span class="fl">74.000</span></span></code></pre></div>
+<p>För att exportera tabellen till en HTML-fil krävs paketet <code>xtable</code>. Installera därför detta paket med koden <code>install.packages("xtable")</code>, och aktivera det sedan med <code>library("xtable")</code>. Koden som används för att exportera tabellen är</p>
+<div class="sourceCode" id="cb366"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb366-1"><a href="tabeller-1.html#cb366-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="at">x =</span> <span class="fu">xtable</span>(tab_summary),  <span class="co"># Anger vilket objekt som ska exporteras</span></span>
+<span id="cb366-2"><a href="tabeller-1.html#cb366-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">type =</span> <span class="st">&quot;html&quot;</span>,             <span class="co"># Anger att det ska skrivas i HTML</span></span>
+<span id="cb366-3"><a href="tabeller-1.html#cb366-3" aria-hidden="true" tabindex="-1"></a>      <span class="at">file =</span> <span class="st">&quot;sammanfattning.html&quot;</span>)   <span class="co"># Anger namn på HMTL-filen som ska skapas</span></span></code></pre></div>
+<p>Det finns en del saker som är värda att notera i koden ovan</p>
+<ol style="list-style-type: decimal">
+<li>Genom argumentet <code>x</code> anges vilket objekt som ska exporteras, alltså vilken tabell som ska skrivas ut. Notera att objektnamnet inte anges individuellt, genom funktionen <code>xtable()</code>. Detta är <strong>mycket viktigt</strong>, och argumentet måste <strong>alltid</strong> specificeras genom <code>xtable()</code>, annars kommer exporten inte att fungera.</li>
+<li>Argumentet <code>type</code> bör alltid vara specificerat som just <code>"html"</code>.</li>
+<li>I argumentet <code>file</code> anges vilket namn HTML-filen som skapas av <code>R</code> kommer att ha. Namnet kan såklart bestämmas på ett lämpligt sätt, men vad som är viktigt är att ändelsen <code>.html</code> (lägg märke till punkten i börjat) <strong>alltid</strong> måste finnas efter filnamnet.</li>
+</ol>
+<p>När koden ovan har körts sparas en ny fil i den mapp som är inställd som working directory. Filen har namnet som specificerades i argumentet <code>file</code> ovan, och kan öppnas i en helt vanlig webbläsare (alltså Chrome, Safari, etc). För att föra över tabellen till en ordbehandlare (alltså något i stil med Word eller Pages) är det lättast att först öppna filen i en webbläsare och kopiera innehållet, precis som visas i bilden nedan.</p>
+<p></br></p>
+<p><img src="docs/images/tabell_html.png" width="100%" style="display: block; margin: auto;" /></p>
+<p></br></p>
+<p>När detta är gjort kan tabellen klistras in i vald ordbehandlare och snyggas till enligt önskemål. När nedanstående tabell klistras in i Pages blir resultatet som i bilden nedan. Tabellen kan sedan redigeras som vanligt, med fördelen att risken för felinmatade siffror minskas markant.</p>
+<p></br></p>
+<p><img src="docs/images/tabell_pages.png" width="100%" style="display: block; margin: auto;" /></p>
+<p>Notera att objektet som skrivits ut ovan är av typen <code>matrix</code>, se koden nedan.</p>
+<div class="sourceCode" id="cb367"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb367-1"><a href="tabeller-1.html#cb367-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(tab_summary)</span>
+<span id="cb367-2"><a href="tabeller-1.html#cb367-2" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> [<span class="dv">1</span>] <span class="st">&quot;matrix&quot;</span> <span class="st">&quot;array&quot;</span></span></code></pre></div>
+<p>Det går även att exportera objekt som har skapats med funktionen <code>table()</code> på samma sätt. Testa gärna själv att som övning exportera en av tabellerna som skapades i Kapitel 5, och sedan klistra in och snygga till den i en ordbehandlare.</p>
+</div>
+<div id="paket-för-tabeller" class="section level2 hasAnchor" number="7.3">
+<h2><span class="header-section-number">7.3</span> Paket för tabeller<a href="tabeller-1.html#paket-för-tabeller" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Du lär dig på denna kurs det som är nödvändigt för att lösa de uppgifter som krävs utifrån kursens mål och innehåll. Du gör detta utan att använda paket och det enda externa paket för tabeller som vi använder är <strong><code>xtable()</code></strong> som används för att exportera tabeller. För den intresserade kan det efter kursen vara värt att kika närmare på något eller några av följande paket:</p>
+<ul>
+<li><code>Table1</code></li>
+<li><code>summartools</code></li>
+<li><code>gt</code></li>
+<li><code>tables</code></li>
+<li><code>DescTool</code></li>
+</ul>
+<p>Det bör också nämnas att en anledningar till att R är populärt är just det stora antalet paket.</p>
+</div>
+<div id="övningsuppgifter-1" class="section level2 hasAnchor" number="7.4">
+<h2><span class="header-section-number">7.4</span> Övningsuppgifter<a href="tabeller-1.html#övningsuppgifter-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<div id="uppgift-1-2" class="section level3 hasAnchor" number="7.4.1">
+<h3><span class="header-section-number">7.4.1</span> Uppgift 1<a href="tabeller-1.html#uppgift-1-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Koden</p>
+<div class="sourceCode" id="cb368"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb368-1"><a href="tabeller-1.html#cb368-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">152021</span>)</span>
+<span id="cb368-2"><a href="tabeller-1.html#cb368-2" aria-hidden="true" tabindex="-1"></a>s <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="st">&quot;A&quot;</span>, <span class="st">&quot;B&quot;</span>, <span class="st">&quot;C&quot;</span>, <span class="st">&quot;D&quot;</span>), <span class="at">size =</span> <span class="dv">100</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<p>kan användas för att skapa en vektor med grupptillhörigheter för 100 olika individer. För varje element i vektorn <code>s</code> väljer funktionen <code>sample()</code> slumpmässigt ett av värdena i vektorn som ges till funktionen genom argumentet <code>x</code>, alltså kommer varje element höra till en av grupperna <code>"A"</code>, <code>"B"</code>, <code>"C"</code>, och <code>"D"</code>.</p>
+<p>Funktionen <code>set.seed()</code> används för att säkerställa att alla studenter får samma vektor <code>s</code>. Eftersom <code>sample()</code> tilldelar element slumpmässigt kommer varje student få olika <code>s</code> om <code>set.seed(152021)</code> inte körs direkt innan koden för <code>s</code>.</p>
+<ol style="list-style-type: lower-alpha">
+<li>Kopiera och kör de två raderna kod ovan. Skapa sedan en vanlig frekvenstabell som beskriver hur många observationer som finns i varje grupp. Spara tabellen i ett objekt vid namn <code>tab_s</code>.</li>
+</ol>
+<p style="margin-left: 25px">
+<button title="q_7_1_a" type="button" onclick="if(document.getElementById(&#39;q_7_1_a&#39;) .style.display==&#39;none&#39;)
+              {document.getElementById(&#39;q_7_1_a&#39;) .style.display=&#39;&#39;}
+            else{document.getElementById(&#39;q_7_1_a&#39;) .style.display=&#39;none&#39;}">
+Visa svar
+</button>
+<div id="q_7_1_a" style="display:none">
+<div class="alert alert-info">
+<div class="sourceCode" id="cb369"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb369-1"><a href="tabeller-1.html#cb369-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">152021</span>)</span>
+<span id="cb369-2"><a href="tabeller-1.html#cb369-2" aria-hidden="true" tabindex="-1"></a>s <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="st">&quot;A&quot;</span>, <span class="st">&quot;B&quot;</span>, <span class="st">&quot;C&quot;</span>, <span class="st">&quot;D&quot;</span>), <span class="at">size =</span> <span class="dv">100</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb369-3"><a href="tabeller-1.html#cb369-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb369-4"><a href="tabeller-1.html#cb369-4" aria-hidden="true" tabindex="-1"></a>tab_s <span class="ot">&lt;-</span> <span class="fu">table</span>(s)  <span class="co"># Skapar tabell</span></span>
+<span id="cb369-5"><a href="tabeller-1.html#cb369-5" aria-hidden="true" tabindex="-1"></a>tab_s              <span class="co"># Skriver ut tabell </span></span>
+<span id="cb369-6"><a href="tabeller-1.html#cb369-6" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> s</span>
+<span id="cb369-7"><a href="tabeller-1.html#cb369-7" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span>  A  B  C  D </span>
+<span id="cb369-8"><a href="tabeller-1.html#cb369-8" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="dv">27</span> <span class="dv">18</span> <span class="dv">29</span> <span class="dv">26</span></span></code></pre></div>
+</div>
+</div>
+</br>
+</p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>Använd <code>xtable()</code>, enligt ovan, för att exportera <code>tab_s</code> till en HTML-fil.</li>
+</ol>
+<p style="margin-left: 25px">
+<button title="q_7_1_b" type="button" onclick="if(document.getElementById(&#39;q_7_1_b&#39;) .style.display==&#39;none&#39;)
+              {document.getElementById(&#39;q_7_1_b&#39;) .style.display=&#39;&#39;}
+            else{document.getElementById(&#39;q_7_1_b&#39;) .style.display=&#39;none&#39;}">
+Visa svar
+</button>
+<div id="q_7_1_b" style="display:none">
+<div class="alert alert-info">
+<div class="sourceCode" id="cb370"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb370-1"><a href="tabeller-1.html#cb370-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="at">x =</span> <span class="fu">xtable</span>(tab_s),     <span class="co"># Anger vilket objekt som ska exporteras</span></span>
+<span id="cb370-2"><a href="tabeller-1.html#cb370-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">type =</span> <span class="st">&quot;html&quot;</span>,         <span class="co"># Anger att det ska skrivas i HTML</span></span>
+<span id="cb370-3"><a href="tabeller-1.html#cb370-3" aria-hidden="true" tabindex="-1"></a>      <span class="at">file =</span> <span class="st">&quot;tab_s.html&quot;</span>)   <span class="co"># Anger namn på HMTL-filen som ska skapas</span></span></code></pre></div>
+</div>
+</div>
+</br>
+</p>
+<ol start="3" style="list-style-type: lower-alpha">
+<li>Tabellen som skrivs ut ovan blir inte riktigt som förväntat, utan den skrivs ut som en tabell med två kolumner snarare än två rader. Detta åtgärdas enklast med hjälp av så kallad <em>transponering</em>. Transponering innebär, i korta drag, att varje kolumn i tabellen görs om till en rad (alternativt att varje rad görs om till en kolumn), och implementeras i <code>R</code> med funktionen <code>t()</code>. Kopiera koden från deluppgift b, men använd ändra det första argumentet så att <code>x = xtable( t(tab_s) )</code>. Kom även ihåg att ändra namnet på output-filen. Hur hur ser tabellen som exporteras ut nu?</li>
+</ol>
+<p style="margin-left: 25px">
+<button title="q_7_1_c" type="button" onclick="if(document.getElementById(&#39;q_7_1_c&#39;) .style.display==&#39;none&#39;)
+              {document.getElementById(&#39;q_7_1_c&#39;) .style.display=&#39;&#39;}
+            else{document.getElementById(&#39;q_7_1_c&#39;) .style.display=&#39;none&#39;}">
+Visa svar
+</button>
+<div id="q_7_1_c" style="display:none">
+<div class="alert alert-info">
+<div class="sourceCode" id="cb371"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb371-1"><a href="tabeller-1.html#cb371-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="at">x =</span> <span class="fu">xtable</span>( <span class="fu">t</span>(tab_s) ),     <span class="co"># Anger vilket objekt som ska exporteras</span></span>
+<span id="cb371-2"><a href="tabeller-1.html#cb371-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">type =</span> <span class="st">&quot;html&quot;</span>,         <span class="co"># Anger att det ska skrivas i HTML</span></span>
+<span id="cb371-3"><a href="tabeller-1.html#cb371-3" aria-hidden="true" tabindex="-1"></a>      <span class="at">file =</span> <span class="st">&quot;tab_s_t.html&quot;</span>)   <span class="co"># Anger namn på HMTL-filen som ska skapas</span></span></code></pre></div>
+</div>
+</div>
+</br>
+</p>
+</div>
+<div id="uppgift-2-2" class="section level3 hasAnchor" number="7.4.2">
+<h3><span class="header-section-number">7.4.2</span> Uppgift 2<a href="tabeller-1.html#uppgift-2-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Återgå nu till tabellen <code>tab_summary</code> som skapades i kapiteltexten. Tabellen som exporterades i kapiteltexten visar två decimaler i varje cell, och detta är default för <code>xtable()</code>. Ibland är det önskvärt att själv kontrollera hur många decimaler som skrivs ut i en tabell, det kan vara nödvändigt att ha färre decimaler för att få in tabellen på ett A4 eller ha fler decimaler för större precision i en skattning.</p>
+<p>Antalet decimaler som används i tabellen kontrolleras med argumentet <code>digits</code> i funktionen <code>xtable()</code>. Default är, som sagt, att <code>digits = 2</code>, men antalet kan såväl ökas som minskas efter önskemål. Viktigt är att argumentet <strong>måste</strong> specificeras inom anropet av <code>xtable()</code> för att få efffekt, och det räcker <strong>inte</strong> att bara sätta det inom <code>print()</code>.</p>
+<p>Med hjälp av informationen ovan, exportera <code>tab_summary</code> till en HTML-fil, där fyra decimaler används i varje cell i tabellen.</p>
+<button title="q_7_2" type="button" onclick="if(document.getElementById(&#39;q_7_2&#39;) .style.display==&#39;none&#39;)
+              {document.getElementById(&#39;q_7_2&#39;) .style.display=&#39;&#39;}
+            else{document.getElementById(&#39;q_7_2&#39;) .style.display=&#39;none&#39;}">
+Visa svar
+</button>
+<div id="q_7_2" style="display:none">
+<div class="alert alert-info">
+<div class="sourceCode" id="cb372"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb372-1"><a href="tabeller-1.html#cb372-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="at">x =</span> <span class="fu">xtable</span>(tab_summary, <span class="at">digits =</span> <span class="dv">4</span>),   </span>
+<span id="cb372-2"><a href="tabeller-1.html#cb372-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">type =</span> <span class="st">&quot;html&quot;</span>,            </span>
+<span id="cb372-3"><a href="tabeller-1.html#cb372-3" aria-hidden="true" tabindex="-1"></a>      <span class="at">file =</span> <span class="st">&quot;sammanfattning_avrund.html&quot;</span>)</span></code></pre></div>
+</div>
+</div>
+<p></br></p>
+</div>
+<div id="uppgift-3-2" class="section level3 hasAnchor" number="7.4.3">
+<h3><span class="header-section-number">7.4.3</span> Uppgift 3<a href="tabeller-1.html#uppgift-3-2" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Förfarandet i föregående uppgifter kan användas även när det rör sig om korstabeller. För att göra en korstabell krävs som bekant två kategoriska variabler, vilka kan genereras med koden nedan.</p>
+<div class="sourceCode" id="cb373"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb373-1"><a href="tabeller-1.html#cb373-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">152021</span>)</span>
+<span id="cb373-2"><a href="tabeller-1.html#cb373-2" aria-hidden="true" tabindex="-1"></a>s <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="st">&quot;A&quot;</span>, <span class="st">&quot;B&quot;</span>, <span class="st">&quot;C&quot;</span>, <span class="st">&quot;D&quot;</span>), <span class="at">size =</span> <span class="dv">100</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb373-3"><a href="tabeller-1.html#cb373-3" aria-hidden="true" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">size =</span> <span class="dv">100</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span></code></pre></div>
+<ol style="list-style-type: lower-alpha">
+<li>Kopiera koden ovan, kör den i RStudio, och skapa en korstabell där <code>r</code> är kolumnvariabel och <code>s</code> är radvariabel. Spara tabellen i ett objekt som heter <code>tab_rs</code>.</li>
+</ol>
+<p style="margin-left: 25px">
+<button title="q_7_3_a" type="button" onclick="if(document.getElementById(&#39;q_7_3_a&#39;) .style.display==&#39;none&#39;)
+              {document.getElementById(&#39;q_7_3_a&#39;) .style.display=&#39;&#39;}
+            else{document.getElementById(&#39;q_7_3_a&#39;) .style.display=&#39;none&#39;}">
+Visa svar
+</button>
+<div id="q_7_3_a" style="display:none">
+<div class="alert alert-info">
+<div class="sourceCode" id="cb374"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb374-1"><a href="tabeller-1.html#cb374-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">152021</span>)</span>
+<span id="cb374-2"><a href="tabeller-1.html#cb374-2" aria-hidden="true" tabindex="-1"></a>s <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="at">x =</span> <span class="fu">c</span>(<span class="st">&quot;A&quot;</span>, <span class="st">&quot;B&quot;</span>, <span class="st">&quot;C&quot;</span>, <span class="st">&quot;D&quot;</span>), <span class="at">size =</span> <span class="dv">100</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb374-3"><a href="tabeller-1.html#cb374-3" aria-hidden="true" tabindex="-1"></a>r <span class="ot">&lt;-</span> <span class="fu">sample</span>(<span class="at">x =</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">6</span>, <span class="at">size =</span> <span class="dv">100</span>, <span class="at">replace =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb374-4"><a href="tabeller-1.html#cb374-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb374-5"><a href="tabeller-1.html#cb374-5" aria-hidden="true" tabindex="-1"></a>tab_rs <span class="ot">&lt;-</span> <span class="fu">table</span>(s, r)</span>
+<span id="cb374-6"><a href="tabeller-1.html#cb374-6" aria-hidden="true" tabindex="-1"></a>tab_rs</span>
+<span id="cb374-7"><a href="tabeller-1.html#cb374-7" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span>    r</span>
+<span id="cb374-8"><a href="tabeller-1.html#cb374-8" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> s   <span class="dv">1</span> <span class="dv">2</span> <span class="dv">3</span> <span class="dv">4</span> <span class="dv">5</span> <span class="dv">6</span></span>
+<span id="cb374-9"><a href="tabeller-1.html#cb374-9" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span>   A <span class="dv">6</span> <span class="dv">4</span> <span class="dv">6</span> <span class="dv">5</span> <span class="dv">5</span> <span class="dv">1</span></span>
+<span id="cb374-10"><a href="tabeller-1.html#cb374-10" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span>   B <span class="dv">4</span> <span class="dv">1</span> <span class="dv">4</span> <span class="dv">5</span> <span class="dv">1</span> <span class="dv">3</span></span>
+<span id="cb374-11"><a href="tabeller-1.html#cb374-11" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span>   C <span class="dv">3</span> <span class="dv">6</span> <span class="dv">2</span> <span class="dv">7</span> <span class="dv">6</span> <span class="dv">5</span></span>
+<span id="cb374-12"><a href="tabeller-1.html#cb374-12" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span>   D <span class="dv">3</span> <span class="dv">9</span> <span class="dv">2</span> <span class="dv">1</span> <span class="dv">3</span> <span class="dv">8</span></span></code></pre></div>
+</div>
+</div>
+</br>
+</p>
+<ol start="2" style="list-style-type: lower-alpha">
+<li>Exportera <code>tab_rs</code> till en HTML-fil.</li>
+</ol>
+<p style="margin-left: 25px">
+<button title="q_7_3_b" type="button" onclick="if(document.getElementById(&#39;q_7_3_b&#39;) .style.display==&#39;none&#39;)
+              {document.getElementById(&#39;q_7_3_b&#39;) .style.display=&#39;&#39;}
+            else{document.getElementById(&#39;q_7_3_b&#39;) .style.display=&#39;none&#39;}">
+Visa svar
+</button>
+<div id="q_7_3_b" style="display:none">
+<div class="alert alert-info">
+<div class="sourceCode" id="cb375"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb375-1"><a href="tabeller-1.html#cb375-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="at">x =</span> <span class="fu">xtable</span>( tab_rs ),  <span class="co"># Anger vilket objekt som ska exporteras</span></span>
+<span id="cb375-2"><a href="tabeller-1.html#cb375-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">type =</span> <span class="st">&quot;html&quot;</span>,         <span class="co"># Anger att det ska skrivas i HTML</span></span>
+<span id="cb375-3"><a href="tabeller-1.html#cb375-3" aria-hidden="true" tabindex="-1"></a>      <span class="at">file =</span> <span class="st">&quot;tab_rs.html&quot;</span>)  <span class="co"># Anger namn på HMTL-filen som ska skapas</span></span></code></pre></div>
+</div>
+</div>
+</br>
+</p>
+<ol start="3" style="list-style-type: lower-alpha">
+<li>Använd <code>tab_rs</code> för att skapa en korstabell som visar andelar istället för frekvenser, andelarna ska vara baserade på kolummntotaler. Exportera den nya andelstabellen till en HTML-fil, och se till så att tre decimaler visas i tabellen som exporteras.</li>
+</ol>
+<p style="margin-left: 25px">
+<button title="q_7_3_c" type="button" onclick="if(document.getElementById(&#39;q_7_3_c&#39;) .style.display==&#39;none&#39;)
+              {document.getElementById(&#39;q_7_3_c&#39;) .style.display=&#39;&#39;}
+            else{document.getElementById(&#39;q_7_3_c&#39;) .style.display=&#39;none&#39;}">
+Visa svar
+</button>
+<div id="q_7_3_c" style="display:none">
+<div class="alert alert-info">
+<p>Tabellen med andelar skapas som vanligt med <code>prop.table()</code>, där <code>margin = 2</code> ger andelar baserade på kolumnsummor.</p>
+<div class="sourceCode" id="cb376"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb376-1"><a href="tabeller-1.html#cb376-1" aria-hidden="true" tabindex="-1"></a>p_tab_rs <span class="ot">&lt;-</span> <span class="fu">prop.table</span>(tab_rs, <span class="at">margin =</span> <span class="dv">2</span>)</span>
+<span id="cb376-2"><a href="tabeller-1.html#cb376-2" aria-hidden="true" tabindex="-1"></a>p_tab_rs</span>
+<span id="cb376-3"><a href="tabeller-1.html#cb376-3" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span>    r</span>
+<span id="cb376-4"><a href="tabeller-1.html#cb376-4" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> s            <span class="dv">1</span>          <span class="dv">2</span>          <span class="dv">3</span>          <span class="dv">4</span>          <span class="dv">5</span>          <span class="dv">6</span></span>
+<span id="cb376-5"><a href="tabeller-1.html#cb376-5" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span>   A <span class="fl">0.37500000</span> <span class="fl">0.20000000</span> <span class="fl">0.42857143</span> <span class="fl">0.27777778</span> <span class="fl">0.33333333</span> <span class="fl">0.05882353</span></span>
+<span id="cb376-6"><a href="tabeller-1.html#cb376-6" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span>   B <span class="fl">0.25000000</span> <span class="fl">0.05000000</span> <span class="fl">0.28571429</span> <span class="fl">0.27777778</span> <span class="fl">0.06666667</span> <span class="fl">0.17647059</span></span>
+<span id="cb376-7"><a href="tabeller-1.html#cb376-7" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span>   C <span class="fl">0.18750000</span> <span class="fl">0.30000000</span> <span class="fl">0.14285714</span> <span class="fl">0.38888889</span> <span class="fl">0.40000000</span> <span class="fl">0.29411765</span></span>
+<span id="cb376-8"><a href="tabeller-1.html#cb376-8" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span>   D <span class="fl">0.18750000</span> <span class="fl">0.45000000</span> <span class="fl">0.14285714</span> <span class="fl">0.05555556</span> <span class="fl">0.20000000</span> <span class="fl">0.47058824</span></span></code></pre></div>
+<p>Tabellen exporteras sedan med koden nedan. Notera att <code>digits = 3</code> ger tre decimaler.</p>
+<div class="sourceCode" id="cb377"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb377-1"><a href="tabeller-1.html#cb377-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="at">x =</span> <span class="fu">xtable</span>(p_tab_rs, <span class="at">digits =</span> <span class="dv">3</span> ),  <span class="co"># Anger vilket objekt som ska exporteras</span></span>
+<span id="cb377-2"><a href="tabeller-1.html#cb377-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">type =</span> <span class="st">&quot;html&quot;</span>,         <span class="co"># Anger att det ska skrivas i HTML</span></span>
+<span id="cb377-3"><a href="tabeller-1.html#cb377-3" aria-hidden="true" tabindex="-1"></a>      <span class="at">file =</span> <span class="st">&quot;p_tab_rs.html&quot;</span>)  <span class="co"># Anger namn på HMTL-filen som ska skapas</span></span></code></pre></div>
+</div>
+</div>
+</br>
+</p>
+</div>
+<div id="uppgift-4" class="section level3 hasAnchor" number="7.4.4">
+<h3><span class="header-section-number">7.4.4</span> Uppgift 4<a href="tabeller-1.html#uppgift-4" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Exportera tabellen som skapades i uppgift 6.3.3. till en HTML-fil.</p>
+<p></br></p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="kvantitativa-variabler.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="figurer-1.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

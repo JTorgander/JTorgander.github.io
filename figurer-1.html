@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Kapitel 8 Figurer | Tillämpad Statistik</title>
+  <meta name="description" content="Kapitel 8 Figurer | Tillämpad Statistik" />
+  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Kapitel 8 Figurer | Tillämpad Statistik" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Kapitel 8 Figurer | Tillämpad Statistik" />
+  
+  
+  
+
+<meta name="author" content="Ronnie Pingel, Valentin Zulj" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="tabeller-1.html"/>
+
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+<script src="libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Tillämpad statistik</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduktion</a>
+<ul>
+<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#om-statistisk-programmering-med-r"><i class="fa fa-check"></i><b>1.1</b> Om statistisk programmering med R</a></li>
+<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#allmänna-tips-om-r-på-kursen"><i class="fa fa-check"></i><b>1.2</b> Allmänna tips om R på kursen</a></li>
+<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#sammanfattning"><i class="fa fa-check"></i><b>1.3</b> Sammanfattning</a></li>
+<li class="chapter" data-level="1.4" data-path="index.html"><a href="index.html#referenser"><i class="fa fa-check"></i><b>1.4</b> Referenser</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html"><i class="fa fa-check"></i><b>2</b> Att börja använda R</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#installation-av-r-och-rstudio"><i class="fa fa-check"></i><b>2.1</b> Installation av R och RStudio</a>
+<ul>
+<li class="chapter" data-level="2.1.1" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#installation-av-r-på-macos"><i class="fa fa-check"></i><b>2.1.1</b> Installation av R på MacOS</a></li>
+<li class="chapter" data-level="2.1.2" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#installation-av-r-på-windows"><i class="fa fa-check"></i><b>2.1.2</b> Installation av R på Windows</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#installation-av-rstudio"><i class="fa fa-check"></i><b>2.2</b> Installation av RStudio</a></li>
+<li class="chapter" data-level="2.3" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#första-sessionen"><i class="fa fa-check"></i><b>2.3</b> Första sessionen</a></li>
+<li class="chapter" data-level="2.4" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#working-directory-ett-smidigt-sätt-att-spara-arbete"><i class="fa fa-check"></i><b>2.4</b> Working directory – ett smidigt sätt att spara arbete</a></li>
+<li class="chapter" data-level="2.5" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#paket"><i class="fa fa-check"></i><b>2.5</b> Paket</a></li>
+<li class="chapter" data-level="2.6" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#sammanfattning-1"><i class="fa fa-check"></i><b>2.6</b> Sammanfattning</a></li>
+<li class="chapter" data-level="2.7" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#övningar"><i class="fa fa-check"></i><b>2.7</b> Övningar</a>
+<ul>
+<li class="chapter" data-level="" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#övning-2.1"><i class="fa fa-check"></i>Övning 2.1</a></li>
+<li class="chapter" data-level="" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#övning-2.2"><i class="fa fa-check"></i>Övning 2.2</a></li>
+<li class="chapter" data-level="" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#övning-2.3"><i class="fa fa-check"></i>Övning 2.3</a></li>
+<li class="chapter" data-level="" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#övning-2.4"><i class="fa fa-check"></i>Övning 2.4</a></li>
+<li class="chapter" data-level="" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#övning-2.5"><i class="fa fa-check"></i>Övning 2.5</a></li>
+<li class="chapter" data-level="" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#övning-2.6"><i class="fa fa-check"></i>Övning 2.6</a></li>
+<li class="chapter" data-level="" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#övning-2.7"><i class="fa fa-check"></i>Övning 2.7</a></li>
+<li class="chapter" data-level="" data-path="att-börja-använda-r.html"><a href="att-börja-använda-r.html#övning-2.8"><i class="fa fa-check"></i>Övning 2.8</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html"><i class="fa fa-check"></i><b>3</b> Data, objekt och funktioner</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#data-och-objekt"><i class="fa fa-check"></i><b>3.1</b> Data och objekt</a></li>
+<li class="chapter" data-level="3.2" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#vektorer"><i class="fa fa-check"></i><b>3.2</b> Vektorer</a>
+<ul>
+<li class="chapter" data-level="3.2.1" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#vektorer-och-indexering"><i class="fa fa-check"></i><b>3.2.1</b> Vektorer och indexering</a></li>
+<li class="chapter" data-level="3.2.2" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#vektorer-och-logiska-operatorer"><i class="fa fa-check"></i><b>3.2.2</b> Vektorer och logiska operatorer</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#matriser"><i class="fa fa-check"></i><b>3.3</b> Matriser</a></li>
+<li class="chapter" data-level="3.4" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#data-frames"><i class="fa fa-check"></i><b>3.4</b> Data frames</a></li>
+<li class="chapter" data-level="3.5" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#funktioner"><i class="fa fa-check"></i><b>3.5</b> Funktioner</a></li>
+<li class="chapter" data-level="3.6" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#sammanfattning-2"><i class="fa fa-check"></i><b>3.6</b> Sammanfattning</a></li>
+<li class="chapter" data-level="3.7" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övningar-1"><i class="fa fa-check"></i><b>3.7</b> Övningar</a>
+<ul>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.1"><i class="fa fa-check"></i>Övning 3.1</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.2"><i class="fa fa-check"></i>Övning 3.2</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.3"><i class="fa fa-check"></i>Övning 3.3</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.4"><i class="fa fa-check"></i>Övning 3.4</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.5"><i class="fa fa-check"></i>Övning 3.5</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.6"><i class="fa fa-check"></i>Övning 3.6</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.7"><i class="fa fa-check"></i>Övning 3.7</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.8"><i class="fa fa-check"></i>Övning 3.8</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.9"><i class="fa fa-check"></i>Övning 3.9</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.10"><i class="fa fa-check"></i>Övning 3.10</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.11"><i class="fa fa-check"></i>Övning 3.11</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.12"><i class="fa fa-check"></i>Övning 3.12</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.13"><i class="fa fa-check"></i>Övning 3.13</a></li>
+<li class="chapter" data-level="" data-path="data-objekt-och-funktioner.html"><a href="data-objekt-och-funktioner.html#övning-3.14"><i class="fa fa-check"></i>Övning 3.14</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html"><i class="fa fa-check"></i><b>4</b> Läsa in och spara data</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#principer-för-organiserade-datamaterial"><i class="fa fa-check"></i><b>4.1</b> Principer för organiserade datamaterial</a></li>
+<li class="chapter" data-level="4.2" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#läsa-in-datamaterial-med-hjälp-av-kod"><i class="fa fa-check"></i><b>4.2</b> Läsa in datamaterial med hjälp av kod</a>
+<ul>
+<li class="chapter" data-level="4.2.1" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#text--och-csv-filer"><i class="fa fa-check"></i><b>4.2.1</b> Text- och CSV-filer</a></li>
+<li class="chapter" data-level="4.2.2" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#excel-filer"><i class="fa fa-check"></i><b>4.2.2</b> Excel-filer</a></li>
+<li class="chapter" data-level="4.2.3" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#övriga-format"><i class="fa fa-check"></i><b>4.2.3</b> Övriga format</a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#läsa-in-datamaterial-med-hjälp-av-menyerna-i-rstudio"><i class="fa fa-check"></i><b>4.3</b> Läsa in datamaterial med hjälp av menyerna i RStudio</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#läsa-in-data-från-working-directory"><i class="fa fa-check"></i><b>4.3.1</b> Läsa in data från working directory</a></li>
+<li class="chapter" data-level="4.3.2" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#läsa-in-data-med-import-dataset"><i class="fa fa-check"></i><b>4.3.2</b> Läsa in data med “Import Dataset”</a></li>
+</ul></li>
+<li class="chapter" data-level="4.4" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#spara-datamaterial-med-hjälp-av-r"><i class="fa fa-check"></i><b>4.4</b> Spara datamaterial med hjälp av R</a></li>
+<li class="chapter" data-level="4.5" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#övningar-2"><i class="fa fa-check"></i><b>4.5</b> Övningar</a>
+<ul>
+<li class="chapter" data-level="" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#övning-4.1"><i class="fa fa-check"></i>Övning 4.1</a></li>
+<li class="chapter" data-level="" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#övning-4.2"><i class="fa fa-check"></i>Övning 4.2</a></li>
+<li class="chapter" data-level="" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#övning-4.3"><i class="fa fa-check"></i>Övning 4.3</a></li>
+<li class="chapter" data-level="" data-path="läsa-in-och-spara-data.html"><a href="läsa-in-och-spara-data.html#övning-4.4"><i class="fa fa-check"></i>Övning 4.4</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="kategorivariabler.html"><a href="kategorivariabler.html"><i class="fa fa-check"></i><b>5</b> Kategorivariabler</a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="kategorivariabler.html"><a href="kategorivariabler.html#en-binär-variabel"><i class="fa fa-check"></i><b>5.1</b> En binär variabel</a>
+<ul>
+<li class="chapter" data-level="5.1.1" data-path="kategorivariabler.html"><a href="kategorivariabler.html#kodning"><i class="fa fa-check"></i><b>5.1.1</b> Kodning</a></li>
+<li class="chapter" data-level="5.1.2" data-path="kategorivariabler.html"><a href="kategorivariabler.html#tabeller-och-figurer"><i class="fa fa-check"></i><b>5.1.2</b> Tabeller och figurer</a></li>
+<li class="chapter" data-level="5.1.3" data-path="kategorivariabler.html"><a href="kategorivariabler.html#inferens"><i class="fa fa-check"></i><b>5.1.3</b> Inferens</a></li>
+</ul></li>
+<li class="chapter" data-level="5.2" data-path="kategorivariabler.html"><a href="kategorivariabler.html#två-binära-variabler"><i class="fa fa-check"></i><b>5.2</b> Två binära variabler</a>
+<ul>
+<li class="chapter" data-level="5.2.1" data-path="kategorivariabler.html"><a href="kategorivariabler.html#tabeller"><i class="fa fa-check"></i><b>5.2.1</b> Tabeller</a></li>
+<li class="chapter" data-level="5.2.2" data-path="kategorivariabler.html"><a href="kategorivariabler.html#kvantifiering-av-samband"><i class="fa fa-check"></i><b>5.2.2</b> Kvantifiering av samband</a></li>
+<li class="chapter" data-level="5.2.3" data-path="kategorivariabler.html"><a href="kategorivariabler.html#figurer"><i class="fa fa-check"></i><b>5.2.3</b> Figurer</a></li>
+<li class="chapter" data-level="5.2.4" data-path="kategorivariabler.html"><a href="kategorivariabler.html#inferens-1"><i class="fa fa-check"></i><b>5.2.4</b> Inferens</a></li>
+</ul></li>
+<li class="chapter" data-level="5.3" data-path="kategorivariabler.html"><a href="kategorivariabler.html#tre-kategorier-eller-fler"><i class="fa fa-check"></i><b>5.3</b> Tre kategorier eller fler</a>
+<ul>
+<li class="chapter" data-level="5.3.1" data-path="kategorivariabler.html"><a href="kategorivariabler.html#kodning-1"><i class="fa fa-check"></i><b>5.3.1</b> Kodning</a></li>
+<li class="chapter" data-level="5.3.2" data-path="kategorivariabler.html"><a href="kategorivariabler.html#tabeller-och-figurer-1"><i class="fa fa-check"></i><b>5.3.2</b> Tabeller och figurer</a></li>
+<li class="chapter" data-level="5.3.3" data-path="kategorivariabler.html"><a href="kategorivariabler.html#inferens-2"><i class="fa fa-check"></i><b>5.3.3</b> Inferens</a></li>
+</ul></li>
+<li class="chapter" data-level="5.4" data-path="kategorivariabler.html"><a href="kategorivariabler.html#samband-mellan-kategorivariabler"><i class="fa fa-check"></i><b>5.4</b> Samband mellan kategorivariabler</a>
+<ul>
+<li class="chapter" data-level="5.4.1" data-path="kategorivariabler.html"><a href="kategorivariabler.html#tabeller-och-figurer-2"><i class="fa fa-check"></i><b>5.4.1</b> Tabeller och figurer</a></li>
+<li class="chapter" data-level="5.4.2" data-path="kategorivariabler.html"><a href="kategorivariabler.html#inferens-3"><i class="fa fa-check"></i><b>5.4.2</b> Inferens</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="kategorivariabler.html"><a href="kategorivariabler.html#programmeringsuppgifter"><i class="fa fa-check"></i><b>5.5</b> Programmeringsuppgifter</a>
+<ul>
+<li class="chapter" data-level="5.5.1" data-path="kategorivariabler.html"><a href="kategorivariabler.html#uppgift-1"><i class="fa fa-check"></i><b>5.5.1</b> Uppgift 1</a></li>
+<li class="chapter" data-level="5.5.2" data-path="kategorivariabler.html"><a href="kategorivariabler.html#uppgift-2"><i class="fa fa-check"></i><b>5.5.2</b> Uppgift 2</a></li>
+<li class="chapter" data-level="5.5.3" data-path="kategorivariabler.html"><a href="kategorivariabler.html#uppgift-3"><i class="fa fa-check"></i><b>5.5.3</b> Uppgift 3</a></li>
+</ul></li>
+<li class="chapter" data-level="5.6" data-path="kategorivariabler.html"><a href="kategorivariabler.html#referenser-1"><i class="fa fa-check"></i><b>5.6</b> Referenser</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html"><i class="fa fa-check"></i><b>6</b> Kvantitativa variabler</a>
+<ul>
+<li class="chapter" data-level="6.1" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html#analys-av-en-kvantitativ-variabel"><i class="fa fa-check"></i><b>6.1</b> Analys av en kvantitativ variabel</a>
+<ul>
+<li class="chapter" data-level="6.1.1" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html#enklare-deskriptiva-mått"><i class="fa fa-check"></i><b>6.1.1</b> Enklare deskriptiva mått</a></li>
+<li class="chapter" data-level="6.1.2" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html#frekvenstabeller"><i class="fa fa-check"></i><b>6.1.2</b> Frekvenstabeller</a></li>
+<li class="chapter" data-level="6.1.3" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html#histogram"><i class="fa fa-check"></i><b>6.1.3</b> Histogram</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html#analys-av-två-kvantitativa-variabler"><i class="fa fa-check"></i><b>6.2</b> Analys av två kvantitativa variabler</a>
+<ul>
+<li class="chapter" data-level="6.2.1" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html#två-kontinuerliga-variabler"><i class="fa fa-check"></i><b>6.2.1</b> Två kontinuerliga variabler</a></li>
+<li class="chapter" data-level="6.2.2" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html#en-kontinuerlig-och-en-diskret-variabel"><i class="fa fa-check"></i><b>6.2.2</b> En kontinuerlig och en diskret variabel</a></li>
+</ul></li>
+<li class="chapter" data-level="6.3" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html#övningsuppgifter"><i class="fa fa-check"></i><b>6.3</b> Övningsuppgifter</a>
+<ul>
+<li class="chapter" data-level="6.3.1" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html#uppgift-1-1"><i class="fa fa-check"></i><b>6.3.1</b> Uppgift 1</a></li>
+<li class="chapter" data-level="6.3.2" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html#uppgift-2-1"><i class="fa fa-check"></i><b>6.3.2</b> Uppgift 2</a></li>
+<li class="chapter" data-level="6.3.3" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html#uppgift-3-1"><i class="fa fa-check"></i><b>6.3.3</b> Uppgift 3</a></li>
+</ul></li>
+<li class="chapter" data-level="6.4" data-path="kvantitativa-variabler.html"><a href="kvantitativa-variabler.html#referenser-2"><i class="fa fa-check"></i><b>6.4</b> Referenser</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="tabeller-1.html"><a href="tabeller-1.html"><i class="fa fa-check"></i><b>7</b> Tabeller</a>
+<ul>
+<li class="chapter" data-level="7.1" data-path="tabeller-1.html"><a href="tabeller-1.html#principer-för-tabeller"><i class="fa fa-check"></i><b>7.1</b> Principer för tabeller</a></li>
+<li class="chapter" data-level="7.2" data-path="tabeller-1.html"><a href="tabeller-1.html#exportera-tabell-till-html-fil"><i class="fa fa-check"></i><b>7.2</b> Exportera tabell till HTML-fil</a></li>
+<li class="chapter" data-level="7.3" data-path="tabeller-1.html"><a href="tabeller-1.html#paket-för-tabeller"><i class="fa fa-check"></i><b>7.3</b> Paket för tabeller</a></li>
+<li class="chapter" data-level="7.4" data-path="tabeller-1.html"><a href="tabeller-1.html#övningsuppgifter-1"><i class="fa fa-check"></i><b>7.4</b> Övningsuppgifter</a>
+<ul>
+<li class="chapter" data-level="7.4.1" data-path="tabeller-1.html"><a href="tabeller-1.html#uppgift-1-2"><i class="fa fa-check"></i><b>7.4.1</b> Uppgift 1</a></li>
+<li class="chapter" data-level="7.4.2" data-path="tabeller-1.html"><a href="tabeller-1.html#uppgift-2-2"><i class="fa fa-check"></i><b>7.4.2</b> Uppgift 2</a></li>
+<li class="chapter" data-level="7.4.3" data-path="tabeller-1.html"><a href="tabeller-1.html#uppgift-3-2"><i class="fa fa-check"></i><b>7.4.3</b> Uppgift 3</a></li>
+<li class="chapter" data-level="7.4.4" data-path="tabeller-1.html"><a href="tabeller-1.html#uppgift-4"><i class="fa fa-check"></i><b>7.4.4</b> Uppgift 4</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="figurer-1.html"><a href="figurer-1.html"><i class="fa fa-check"></i><b>8</b> Figurer</a>
+<ul>
+<li class="chapter" data-level="8.1" data-path="figurer-1.html"><a href="figurer-1.html#estetik"><i class="fa fa-check"></i><b>8.1</b> Estetik</a></li>
+<li class="chapter" data-level="8.2" data-path="figurer-1.html"><a href="figurer-1.html#grundläggande-figurhantering"><i class="fa fa-check"></i><b>8.2</b> Grundläggande figurhantering</a></li>
+<li class="chapter" data-level="8.3" data-path="figurer-1.html"><a href="figurer-1.html#färger-och-figurer"><i class="fa fa-check"></i><b>8.3</b> Färger och figurer</a>
+<ul>
+<li class="chapter" data-level="8.3.1" data-path="figurer-1.html"><a href="figurer-1.html#presentation-av-aggregerade-data"><i class="fa fa-check"></i><b>8.3.1</b> Presentation av aggregerade data</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="figurer-1.html"><a href="figurer-1.html#cirkeldigram"><i class="fa fa-check"></i><b>8.4</b> Cirkeldigram</a></li>
+<li class="chapter" data-level="8.5" data-path="figurer-1.html"><a href="figurer-1.html#figurer-för-fördelningar"><i class="fa fa-check"></i><b>8.5</b> Figurer för fördelningar</a></li>
+<li class="chapter" data-level="8.6" data-path="figurer-1.html"><a href="figurer-1.html#lådagram-1"><i class="fa fa-check"></i><b>8.6</b> Lådagram</a></li>
+<li class="chapter" data-level="8.7" data-path="figurer-1.html"><a href="figurer-1.html#spridningsdiagram-1"><i class="fa fa-check"></i><b>8.7</b> Spridningsdiagram</a></li>
+<li class="chapter" data-level="8.8" data-path="figurer-1.html"><a href="figurer-1.html#exportera-figurer"><i class="fa fa-check"></i><b>8.8</b> Exportera figurer</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Tillämpad Statistik</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="figurer-1" class="section level1 hasAnchor" number="8">
+<h1><span class="header-section-number">Kapitel 8</span> Figurer<a href="figurer-1.html#figurer-1" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<style>
+body {
+text-align: justify}
+</style>
+<p>En figur kan vara ett diagram, ett foto, en skiss eller en karta. Syftet är att ge en överskådlig beskrivning av data, eventuellt med avsikt att generalisera till en population. Välgjorda figurer tillgängliggör rapporter, bildspel eller artiklar för läsare. En god figur kan ge den som analyserar data möjlighet att betrakta data på ett sätt som annars inte är möjligt.</p>
+<p>R ger tillgång till omfattande möjligheter för datavisualisering och en anledning till utvecklingen av R var behovet av ett verktyg för avancerad visualisering. Dels ger basutbudet i R stora möjligheter, dels finns det paket (exempelvis ggplot2 och lattice) som ger ytterligare möjligheter. Det bör nämnas att man ofta får prova sig fram när man skapar figurer i R och nybörjaren bör därför inte misströsta. Övning ger färdighet. Det kan vara bra att veta att figurer kan ta lång tid att skapa.</p>
+<p>När man ska skapa en figur bör man fundera på om figuren</p>
+<ul>
+<li>är avsedd att presenteras externt, t ex figurer i en rapport eller bildspel. En sådan figur ska på ett tydligt och korrekt redovisa det väsentliga i en analys och vara estetiskt fullgod. Dessutom måste figuren vara sparad i ett format som fungerar för det medium den ska publiceras i.</li>
+<li>är avsedd för en intern analys, t ex för dataanalytikern och andra involverade i analysen. Målet kan vara att studera data explorativt vid tvätt av data, kontroll av förutsättningar vid analyser eller förmedla preliminära resultat. Estetiska och pedagogiska aspekter hos sådana figurer är inte av någon större vikt. Däremot måste naturligtvis figurerna på ett korrekt sätt representera data.</li>
+</ul>
+<p>Eftersom figurer representerar data så är ofta tabeller och figurer utbytbara informationsmässigt. Om så är fallet måste den som analyserar data ta ställning till att redovisa antingen tabellen eller figuren. Men det kan också vara så att det endast är med hjälp av en figur som data kan beskrivas på tillfredställande sätt.</p>
+<div id="estetik" class="section level2 hasAnchor" number="8.1">
+<h2><span class="header-section-number">8.1</span> Estetik<a href="figurer-1.html#estetik" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Vi kan (krasst sett) klassificera figurer i fyra kategorier:</p>
+<ul>
+<li>Ok.</li>
+<li>Oestetisk, men korrekt.</li>
+<li>Dålig, innebär att figuren är svårtolkad men principellt korrekt.</li>
+<li>Felaktig.</li>
+</ul>
+<p>Var och en av kategorierna illustreras med ett diagram i nedanstående figur.</p>
+<p><img src="_main_files/figure-html/unnamed-chunk-364-1.png" width="768" style="display: block; margin: auto;" /></p>
+<button title="f1" type="button" onclick="if(document.getElementById(&#39;f1&#39;) .style.display==&#39;none&#39;)
+              {document.getElementById(&#39;f1&#39;) .style.display=&#39;&#39;}
+            else{document.getElementById(&#39;f1&#39;) .style.display=&#39;none&#39;}">
+Visa figurkod
+</button>
+<div id="f1" style="display:none">
+<div class="alert alert-info">
+<div class="sourceCode" id="cb378"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb378-1"><a href="figurer-1.html#cb378-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Läs in data</span></span>
+<span id="cb378-2"><a href="figurer-1.html#cb378-2" aria-hidden="true" tabindex="-1"></a> df <span class="ot">&lt;-</span> <span class="fu">read.csv2</span>(<span class="st">&quot;data/conscriptiondata.csv&quot;</span>)</span>
+<span id="cb378-3"><a href="figurer-1.html#cb378-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Skapa kategorier av poängen på Test A</span></span>
+<span id="cb378-4"><a href="figurer-1.html#cb378-4" aria-hidden="true" tabindex="-1"></a> df<span class="sc">$</span>testa_cat[df<span class="sc">$</span>testa <span class="sc">&lt;</span> <span class="dv">10</span>] <span class="ot">&lt;-</span> <span class="dv">1</span></span>
+<span id="cb378-5"><a href="figurer-1.html#cb378-5" aria-hidden="true" tabindex="-1"></a> df<span class="sc">$</span>testa_cat[(df<span class="sc">$</span>testa <span class="sc">&gt;=</span> <span class="dv">10</span>) <span class="sc">&amp;</span> (df<span class="sc">$</span>testa <span class="sc">&lt;</span> <span class="dv">20</span>)] <span class="ot">&lt;-</span> <span class="dv">2</span></span>
+<span id="cb378-6"><a href="figurer-1.html#cb378-6" aria-hidden="true" tabindex="-1"></a> df<span class="sc">$</span>testa_cat[(df<span class="sc">$</span>testa <span class="sc">&gt;=</span> <span class="dv">20</span>) <span class="sc">&amp;</span> (df<span class="sc">$</span>testa <span class="sc">&lt;</span> <span class="dv">30</span>)] <span class="ot">&lt;-</span> <span class="dv">3</span>  </span>
+<span id="cb378-7"><a href="figurer-1.html#cb378-7" aria-hidden="true" tabindex="-1"></a> df<span class="sc">$</span>testa_cat[(df<span class="sc">$</span>testa <span class="sc">&gt;=</span> <span class="dv">30</span>)] <span class="ot">&lt;-</span> <span class="dv">4</span>  </span>
+<span id="cb378-8"><a href="figurer-1.html#cb378-8" aria-hidden="true" tabindex="-1"></a> df<span class="sc">$</span>testa_cat <span class="ot">&lt;-</span> <span class="fu">factor</span>(df<span class="sc">$</span>testa_cat)</span>
+<span id="cb378-9"><a href="figurer-1.html#cb378-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Skapa ett tabellobjekt </span></span>
+<span id="cb378-10"><a href="figurer-1.html#cb378-10" aria-hidden="true" tabindex="-1"></a> freqtable_testa <span class="ot">&lt;-</span> <span class="fu">table</span>(df<span class="sc">$</span>testa_cat)</span>
+<span id="cb378-11"><a href="figurer-1.html#cb378-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb378-12"><a href="figurer-1.html#cb378-12" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">2</span>))</span>
+<span id="cb378-13"><a href="figurer-1.html#cb378-13" aria-hidden="true" tabindex="-1"></a><span class="co"># OK figur</span></span>
+<span id="cb378-14"><a href="figurer-1.html#cb378-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">barplot</span>(freqtable_testa<span class="sc">/</span><span class="dv">1000</span>, </span>
+<span id="cb378-15"><a href="figurer-1.html#cb378-15" aria-hidden="true" tabindex="-1"></a>          <span class="at">col=</span><span class="st">&quot;lightblue&quot;</span>, </span>
+<span id="cb378-16"><a href="figurer-1.html#cb378-16" aria-hidden="true" tabindex="-1"></a>          <span class="at">main=</span><span class="st">&quot;OK&quot;</span>, </span>
+<span id="cb378-17"><a href="figurer-1.html#cb378-17" aria-hidden="true" tabindex="-1"></a>          <span class="at">ylab=</span><span class="st">&quot;Antal (tusental)&quot;</span>, </span>
+<span id="cb378-18"><a href="figurer-1.html#cb378-18" aria-hidden="true" tabindex="-1"></a>          <span class="at">xlab =</span> <span class="st">&quot;Poäng test A&quot;</span>,</span>
+<span id="cb378-19"><a href="figurer-1.html#cb378-19" aria-hidden="true" tabindex="-1"></a>          <span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">350</span>), </span>
+<span id="cb378-20"><a href="figurer-1.html#cb378-20" aria-hidden="true" tabindex="-1"></a>          <span class="at">border=</span><span class="st">&quot;white&quot;</span>,</span>
+<span id="cb378-21"><a href="figurer-1.html#cb378-21" aria-hidden="true" tabindex="-1"></a>          <span class="at">names.arg =</span> <span class="fu">c</span>(<span class="st">&quot;0-9&quot;</span>, <span class="st">&quot;10-19&quot;</span>, <span class="st">&quot;20-29&quot;</span>, <span class="st">&quot;30-40&quot;</span>))</span>
+<span id="cb378-22"><a href="figurer-1.html#cb378-22" aria-hidden="true" tabindex="-1"></a><span class="co"># Oestetisk figur</span></span>
+<span id="cb378-23"><a href="figurer-1.html#cb378-23" aria-hidden="true" tabindex="-1"></a> <span class="fu">barplot</span>(freqtable_testa<span class="sc">/</span><span class="dv">1000</span>, </span>
+<span id="cb378-24"><a href="figurer-1.html#cb378-24" aria-hidden="true" tabindex="-1"></a>         <span class="at">main=</span><span class="st">&quot;Oestetisk&quot;</span>, </span>
+<span id="cb378-25"><a href="figurer-1.html#cb378-25" aria-hidden="true" tabindex="-1"></a>         <span class="at">col=</span><span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">7</span>,<span class="dv">5</span>,<span class="dv">2</span>),</span>
+<span id="cb378-26"><a href="figurer-1.html#cb378-26" aria-hidden="true" tabindex="-1"></a>         <span class="at">xlab =</span> <span class="st">&quot;Poäng test A&quot;</span>, </span>
+<span id="cb378-27"><a href="figurer-1.html#cb378-27" aria-hidden="true" tabindex="-1"></a>         <span class="at">ylab=</span><span class="st">&quot;Antal (tusental)&quot;</span>,</span>
+<span id="cb378-28"><a href="figurer-1.html#cb378-28" aria-hidden="true" tabindex="-1"></a>         <span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">350</span>), </span>
+<span id="cb378-29"><a href="figurer-1.html#cb378-29" aria-hidden="true" tabindex="-1"></a>         <span class="at">border=</span><span class="st">&quot;white&quot;</span>,</span>
+<span id="cb378-30"><a href="figurer-1.html#cb378-30" aria-hidden="true" tabindex="-1"></a>         <span class="at">names.arg =</span> <span class="fu">c</span>(<span class="st">&quot;0-9&quot;</span>, <span class="st">&quot;10-19&quot;</span>, <span class="st">&quot;20-29&quot;</span>, <span class="st">&quot;30-40&quot;</span>))</span>
+<span id="cb378-31"><a href="figurer-1.html#cb378-31" aria-hidden="true" tabindex="-1"></a> <span class="fu">abline</span>(<span class="at">h =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">100</span>, <span class="dv">200</span>, <span class="dv">300</span>), <span class="at">lwd =</span> <span class="dv">2</span>)</span>
+<span id="cb378-32"><a href="figurer-1.html#cb378-32" aria-hidden="true" tabindex="-1"></a> <span class="co"># Dålig figur</span></span>
+<span id="cb378-33"><a href="figurer-1.html#cb378-33" aria-hidden="true" tabindex="-1"></a> <span class="fu">barplot</span>(freqtable_testa, </span>
+<span id="cb378-34"><a href="figurer-1.html#cb378-34" aria-hidden="true" tabindex="-1"></a>         <span class="at">main=</span><span class="st">&quot;Dålig&quot;</span>, </span>
+<span id="cb378-35"><a href="figurer-1.html#cb378-35" aria-hidden="true" tabindex="-1"></a>         <span class="at">col=</span><span class="st">&quot;lightblue&quot;</span>,</span>
+<span id="cb378-36"><a href="figurer-1.html#cb378-36" aria-hidden="true" tabindex="-1"></a>         <span class="at">ylab=</span><span class="st">&quot;Antal&quot;</span>, </span>
+<span id="cb378-37"><a href="figurer-1.html#cb378-37" aria-hidden="true" tabindex="-1"></a>         <span class="at">xlab =</span> <span class="st">&quot;Poängkategori test A&quot;</span>,</span>
+<span id="cb378-38"><a href="figurer-1.html#cb378-38" aria-hidden="true" tabindex="-1"></a>         <span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">350000</span>), </span>
+<span id="cb378-39"><a href="figurer-1.html#cb378-39" aria-hidden="true" tabindex="-1"></a>         <span class="at">border=</span><span class="st">&quot;white&quot;</span>)</span>
+<span id="cb378-40"><a href="figurer-1.html#cb378-40" aria-hidden="true" tabindex="-1"></a> <span class="co"># Felaktig figur </span></span>
+<span id="cb378-41"><a href="figurer-1.html#cb378-41" aria-hidden="true" tabindex="-1"></a> <span class="fu">barplot</span>(freqtable_testa, </span>
+<span id="cb378-42"><a href="figurer-1.html#cb378-42" aria-hidden="true" tabindex="-1"></a>         <span class="at">main=</span><span class="st">&quot;Felaktig&quot;</span>, </span>
+<span id="cb378-43"><a href="figurer-1.html#cb378-43" aria-hidden="true" tabindex="-1"></a>         <span class="at">col=</span><span class="st">&quot;lightblue&quot;</span>,</span>
+<span id="cb378-44"><a href="figurer-1.html#cb378-44" aria-hidden="true" tabindex="-1"></a>         <span class="at">ylab=</span><span class="st">&quot;&quot;</span>, </span>
+<span id="cb378-45"><a href="figurer-1.html#cb378-45" aria-hidden="true" tabindex="-1"></a>         <span class="at">xlab =</span> <span class="st">&quot;Test&quot;</span>,</span>
+<span id="cb378-46"><a href="figurer-1.html#cb378-46" aria-hidden="true" tabindex="-1"></a>         <span class="at">ylim=</span><span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">800000</span>), </span>
+<span id="cb378-47"><a href="figurer-1.html#cb378-47" aria-hidden="true" tabindex="-1"></a>         <span class="at">border=</span><span class="st">&quot;white&quot;</span>, </span>
+<span id="cb378-48"><a href="figurer-1.html#cb378-48" aria-hidden="true" tabindex="-1"></a>         <span class="at">xaxt=</span><span class="st">&#39;n&#39;</span>, </span>
+<span id="cb378-49"><a href="figurer-1.html#cb378-49" aria-hidden="true" tabindex="-1"></a>         <span class="at">yaxt=</span><span class="st">&#39;n&#39;</span>)</span></code></pre></div>
+</div>
+</div>
+<p></br></p>
+<p>Den första figuren är OK eftersom den redovisar stapeldiagramen utan felaktigheter. Den andra figuren är oestetisk beträffande färgval och har hjälplinjer som löper över staplarna istället för bakom. Figuren som klassas som dålig är korrekt, men det är svårt att urskilja detaljer i den. Dessutom är namnen på kategorierna otydliga och kan förväxlas med poäng. Den felaktiga figuren visar staplarna, men det finns ingen information som gör figuren möjlig att tolka.</p>
+<p>Notera att distinktionen oestetisk-dålig-felaktig är flytande. Att ha olika färger på staplar innebär att läsaren kan föranledas att tro att färgerna tillför ytterligare information som egentligen inte finns. En korrekt figur som är dålig, kanske är så dålig att den kan misstolkas vilket innebär att den egentligen är felaktig.</p>
+<p>Forskare och andra som regelbundet arbetar med vetenskapliga rapporter brukar ofta ha en ganska bra uppfattning om vad som är en korrekt figur. Däremot saknas en känsla för estetiken i en figur. Å andra sidan är det inte ovanligt att se grafiker som skapar vackra figurer, men som inte på ett tillfredställande korrekt sätt redovisar data.</p>
+</div>
+<div id="grundläggande-figurhantering" class="section level2 hasAnchor" number="8.2">
+<h2><span class="header-section-number">8.2</span> Grundläggande figurhantering<a href="figurer-1.html#grundläggande-figurhantering" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Det finns en uppsättning figurer som ofta används. Vi kommer gå igenom de vanligaste figurtyperna som räcker för de absolut flesta situationerna. Utöver dessa finns till exempel figurer som visar 3-dimensionella samband, kartor och specialdiagram. Innan vi presenterar några vanliga typer av figurer ska vi gå igenom ett några grundläggande funktioner som en användare ska känna till när man konstruerar figurer.</p>
+<p>För det första bygger R på att man med hjälp av en figur-funktion, t ex <strong><code>plot()</code></strong>, skapar en canvas/målarduk. Det går sedan att med olika argument i flera steg måla på denna målarduk. Vi illusterar detta sätt att arbeta med figurer genom att först med funktionen <strong><code>plot()</code></strong> skapa en figur. Sedan används funktionen <strong><code>lines()</code></strong> för rita en regressionslinje i figuren.</p>
+<div class="sourceCode" id="cb379"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb379-1"><a href="figurer-1.html#cb379-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Läs in data för figurer</span></span>
+<span id="cb379-2"><a href="figurer-1.html#cb379-2" aria-hidden="true" tabindex="-1"></a> x1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">8</span>, <span class="dv">13</span>, <span class="dv">9</span>, <span class="dv">11</span>, <span class="dv">14</span>, <span class="dv">6</span>, <span class="dv">4</span>, <span class="dv">12</span>, <span class="dv">7</span>, <span class="dv">5</span>)</span>
+<span id="cb379-3"><a href="figurer-1.html#cb379-3" aria-hidden="true" tabindex="-1"></a> x2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">8</span>, <span class="dv">13</span>, <span class="dv">9</span>, <span class="dv">11</span>, <span class="dv">14</span>, <span class="dv">6</span>, <span class="dv">4</span>, <span class="dv">12</span>, <span class="dv">7</span>, <span class="dv">5</span>)</span>
+<span id="cb379-4"><a href="figurer-1.html#cb379-4" aria-hidden="true" tabindex="-1"></a> x3 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">8</span>, <span class="dv">13</span>, <span class="dv">9</span>, <span class="dv">11</span>, <span class="dv">14</span>, <span class="dv">6</span>, <span class="dv">4</span>, <span class="dv">12</span>, <span class="dv">7</span>, <span class="dv">5</span>)</span>
+<span id="cb379-5"><a href="figurer-1.html#cb379-5" aria-hidden="true" tabindex="-1"></a> x4 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">8</span>, <span class="dv">8</span>, <span class="dv">13</span>, <span class="dv">8</span>, <span class="dv">8</span>, <span class="dv">8</span>, <span class="dv">8</span>, <span class="dv">8</span>, <span class="dv">8</span>, <span class="dv">8</span>, <span class="dv">8</span>)</span>
+<span id="cb379-6"><a href="figurer-1.html#cb379-6" aria-hidden="true" tabindex="-1"></a> y1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">8.04</span>, <span class="fl">6.95</span>, <span class="fl">7.58</span>, <span class="fl">8.81</span>, <span class="fl">8.33</span>, <span class="fl">9.96</span>, <span class="fl">7.24</span>, <span class="fl">4.26</span>, <span class="fl">10.84</span>, <span class="fl">4.82</span>, <span class="fl">5.68</span>)</span>
+<span id="cb379-7"><a href="figurer-1.html#cb379-7" aria-hidden="true" tabindex="-1"></a> y2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">9.14</span>, <span class="fl">8.14</span>, <span class="fl">8.74</span>, <span class="fl">8.77</span>, <span class="fl">9.26</span>, <span class="fl">8.10</span>, <span class="fl">6.13</span>, <span class="fl">3.10</span>, <span class="fl">9.13</span>, <span class="fl">7.26</span>, <span class="fl">4.74</span>)</span>
+<span id="cb379-8"><a href="figurer-1.html#cb379-8" aria-hidden="true" tabindex="-1"></a> y3 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">7.46</span>, <span class="fl">6.77</span>, <span class="fl">12.74</span>, <span class="fl">7.11</span>, <span class="fl">7.81</span>, <span class="fl">8.84</span>, <span class="fl">6.08</span>, <span class="fl">5.39</span>, <span class="fl">8.15</span>, <span class="fl">6.42</span>, <span class="fl">5.73</span>)</span>
+<span id="cb379-9"><a href="figurer-1.html#cb379-9" aria-hidden="true" tabindex="-1"></a> y4 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">6.58</span>, <span class="fl">5.76</span>, <span class="fl">7.71</span>, <span class="fl">8.84</span>, <span class="fl">8.47</span>, <span class="fl">7.04</span>, <span class="fl">5.25</span>, <span class="fl">12.50</span>, <span class="fl">5.56</span>, <span class="fl">7.91</span>, <span class="fl">6.89</span>)</span>
+<span id="cb379-10"><a href="figurer-1.html#cb379-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb379-11"><a href="figurer-1.html#cb379-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Regressionlinje </span></span>
+<span id="cb379-12"><a href="figurer-1.html#cb379-12" aria-hidden="true" tabindex="-1"></a> x <span class="ot">&lt;-</span> <span class="dv">4</span><span class="sc">:</span><span class="dv">14</span></span>
+<span id="cb379-13"><a href="figurer-1.html#cb379-13" aria-hidden="true" tabindex="-1"></a> Ey <span class="ot">&lt;-</span> <span class="fl">3.00</span> <span class="sc">+</span> <span class="fl">0.500</span><span class="sc">*</span>x</span>
+<span id="cb379-14"><a href="figurer-1.html#cb379-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb379-15"><a href="figurer-1.html#cb379-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Skapa en figur för x1 och y1. Ritar sedan en regressionslinje med lines()</span></span>
+<span id="cb379-16"><a href="figurer-1.html#cb379-16" aria-hidden="true" tabindex="-1"></a> <span class="fu">plot</span>(x1, y1)</span>
+<span id="cb379-17"><a href="figurer-1.html#cb379-17" aria-hidden="true" tabindex="-1"></a> <span class="fu">lines</span>(x, Ey)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-366-1.png" width="384" style="display: block; margin: auto;" /></p>
+<p>För det andra omges målarduken av en ram, så kallade marginaler. Genom att använda funktionen <strong><code>par(mar = c(5.1, 4.1, 4.1, 2.1))</code></strong>, värdena är default-inställningen på marginalernas storlek, kan vi enkelt ändra marginalernas storlek. Figuren nedan illusterar målarduken i mitten med marginalerna omkring. Ordningen på värdena korresponderar till respektive marginals position. Det finns en nedre marginal (1), en vänstermarginal (2), en övre marginal (3) och en högermarginal (4).</p>
+<p><img src="docs/images/margins.jpg" width="70%" style="background-color: #414244 ; padding:1px; display: inline-block;" style="display: block; margin: auto;" /></p>
+<p>Genom att ändra värdena ser vi att marginalernas storlek ändras. Det är mycket vanligt att justera marginalernas storlek eftersom onödiga vita ytor inte är önsvärda i en figur. Det kan också vara så att marginalers storlek måste utökas på grund att delar i figuren, t ex kategori- och/eller variabelnamn, annars inte får plats. Ett sådant exempel återges i Kapitel 5, närmare bestämt i avsnittet om Likert-figurer.</p>
+<p>För det tredje är det vanligt att kombinera flera diagram i en figur. Detta är möjligt med funktionen <strong><code>par()</code></strong>, fast nu med argumentet <strong>mfrow = c(antalrader, antalkolumner)</strong>. Argumentet består av en vektor med två värden, et som anger antalet rader och ett som anger antalet kolumner som önskas i figuren.</p>
+<p>Exemplet nedan visar hur fyra diagram över samband kan illustereras i en och samma figur. De fyra datamaterialen kallas för Anscombes kvartett (Anscombe, 1973), och är grund för en berömd illustration av hur viktig datavisualisering är. Alla fyra datamaterial har nämligen samma medelvärde, standardavvikelse, korrelation och regressionlinje. Men en grafisk jämförelse visar hur olika egenskaper de olika datamaterialen har!</p>
+<div class="sourceCode" id="cb380"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb380-1"><a href="figurer-1.html#cb380-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Skapa fyra diagram i en figur, 2 rader och 2 kolumner. Fyller på med lines i varje diagram.</span></span>
+<span id="cb380-2"><a href="figurer-1.html#cb380-2" aria-hidden="true" tabindex="-1"></a> <span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>))</span>
+<span id="cb380-3"><a href="figurer-1.html#cb380-3" aria-hidden="true" tabindex="-1"></a> <span class="fu">plot</span>(x1, y1, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">15</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">13</span>))</span>
+<span id="cb380-4"><a href="figurer-1.html#cb380-4" aria-hidden="true" tabindex="-1"></a> <span class="fu">lines</span>(x, Ey, <span class="at">col =</span> <span class="st">&quot;red&quot;</span>)</span>
+<span id="cb380-5"><a href="figurer-1.html#cb380-5" aria-hidden="true" tabindex="-1"></a> <span class="fu">plot</span>(x2, y2, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">15</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">13</span>))</span>
+<span id="cb380-6"><a href="figurer-1.html#cb380-6" aria-hidden="true" tabindex="-1"></a> <span class="fu">lines</span>(x, Ey, <span class="at">col =</span> <span class="st">&quot;red&quot;</span>)</span>
+<span id="cb380-7"><a href="figurer-1.html#cb380-7" aria-hidden="true" tabindex="-1"></a> <span class="fu">plot</span>(x3, y3, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">15</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">13</span>))</span>
+<span id="cb380-8"><a href="figurer-1.html#cb380-8" aria-hidden="true" tabindex="-1"></a> <span class="fu">lines</span>(x, Ey, <span class="at">col =</span> <span class="st">&quot;red&quot;</span>)</span>
+<span id="cb380-9"><a href="figurer-1.html#cb380-9" aria-hidden="true" tabindex="-1"></a> <span class="fu">plot</span>(x4, y4, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">15</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">13</span>))</span>
+<span id="cb380-10"><a href="figurer-1.html#cb380-10" aria-hidden="true" tabindex="-1"></a> <span class="fu">lines</span>(x, Ey, <span class="at">col =</span> <span class="st">&quot;red&quot;</span>)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-368-1.png" width="576" style="display: block; margin: auto;" /></p>
+<p>Vi är dock inte helt nöjda med ovanstående figur, utan vi tycker det finns för mycket vit yta mellan diagrammen. Vi kombineras de bägge argumenten i <strong><code>par()</code></strong> med målet att ha fyra diagram i en figur, men med mindre marginaler. Nu ser det bättre ut!</p>
+<div class="sourceCode" id="cb381"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb381-1"><a href="figurer-1.html#cb381-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Skapa fyra diagram i en figur. Fyller på med en linje med lines()</span></span>
+<span id="cb381-2"><a href="figurer-1.html#cb381-2" aria-hidden="true" tabindex="-1"></a> <span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>), <span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">1</span>)) </span>
+<span id="cb381-3"><a href="figurer-1.html#cb381-3" aria-hidden="true" tabindex="-1"></a> <span class="fu">plot</span>(x1, y1, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">15</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">13</span>))</span>
+<span id="cb381-4"><a href="figurer-1.html#cb381-4" aria-hidden="true" tabindex="-1"></a> <span class="fu">lines</span>(x, Ey, <span class="at">col =</span> <span class="st">&quot;red&quot;</span>)</span>
+<span id="cb381-5"><a href="figurer-1.html#cb381-5" aria-hidden="true" tabindex="-1"></a> <span class="fu">plot</span>(x2, y2, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">15</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">13</span>))</span>
+<span id="cb381-6"><a href="figurer-1.html#cb381-6" aria-hidden="true" tabindex="-1"></a> <span class="fu">lines</span>(x, Ey, <span class="at">col =</span> <span class="st">&quot;red&quot;</span>)</span>
+<span id="cb381-7"><a href="figurer-1.html#cb381-7" aria-hidden="true" tabindex="-1"></a> <span class="fu">plot</span>(x3, y3, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">15</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">13</span>))</span>
+<span id="cb381-8"><a href="figurer-1.html#cb381-8" aria-hidden="true" tabindex="-1"></a> <span class="fu">lines</span>(x, Ey, <span class="at">col =</span> <span class="st">&quot;red&quot;</span>)</span>
+<span id="cb381-9"><a href="figurer-1.html#cb381-9" aria-hidden="true" tabindex="-1"></a> <span class="fu">plot</span>(x4, y4, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">15</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">13</span>))</span>
+<span id="cb381-10"><a href="figurer-1.html#cb381-10" aria-hidden="true" tabindex="-1"></a> <span class="fu">lines</span>(x, Ey, <span class="at">col =</span> <span class="st">&quot;red&quot;</span>)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-369-1.png" width="576" style="display: block; margin: auto;" /></p>
+</div>
+<div id="färger-och-figurer" class="section level2 hasAnchor" number="8.3">
+<h2><span class="header-section-number">8.3</span> Färger och figurer<a href="figurer-1.html#färger-och-figurer" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Som visats i tidigare kapitel kan färger användas för att lägga till extra information i figurer. Det är dock sällan önskvärt att använda olika färger om de inte tillför någon information som inte redan finns i diagrammet. I ett stapeldiagram som illustrerar antalet respondenter som hör till en viss åldersgrupp, till exempel, finns det ingen poäng i att ha olikfärgade staplar, då färskillnaderna kan vara förvirrande för läsaren. Eftersom varje ålderskategori redan har sin egen stapel finns ingen anledning att ytterligare skilja dem åt med hjälp av olika färger.</p>
+<p>Generellt sett rekommenderas följande</p>
+<ul>
+<li>Om färgen representerar olika kategorier som inte går att rangordna bör det vara olika färger</li>
+<li>Om färgen regresenterar en kvantitativ variabel kan man ha olika nyanser på samma färger för att visa magnituden på variabeln.</li>
+</ul>
+<div id="presentation-av-aggregerade-data" class="section level3 hasAnchor" number="8.3.1">
+<h3><span class="header-section-number">8.3.1</span> Presentation av aggregerade data<a href="figurer-1.html#presentation-av-aggregerade-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Aggregerade data (summor, antal, medelvärden, andelar) presenteras ofta i</p>
+<ul>
+<li>stapeldiagram, där R använder funktionen <strong><code>barplot()</code></strong>.</li>
+<li>punktdiagram, där R använder funktionen <strong><code>dotchart()</code></strong>.</li>
+</ul>
+<p>I princip kan samma information redovisas i en tabell men en grafisk presentation kan vara att föredra, detta är lite olika från person till person. På grund av relationen mellan stapeldiagram och tabeller används i R ofta skapat tabellobjekt, men det går också att använda enskilda variabler från en data frame. Vad som dock är viktigt när man skapar figurer i R är att användaren först måste skapa data i ett format som kan analyseras, sedan skapa figuren.</p>
+<p>Vi ska nu skapa en figur för filmers intäkter 2019. Jämför de olika figurerna nedan och fundera på varför den ena är bättre än den andra.</p>
+<div class="sourceCode" id="cb382"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb382-1"><a href="figurer-1.html#cb382-1" aria-hidden="true" tabindex="-1"></a>boxoffice2019 <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">title =</span> <span class="fu">c</span>(<span class="st">&quot;Aladdin&quot;</span>,  <span class="st">&quot;Avengers: Endgame&quot;</span>, <span class="st">&quot;Captain Marvel&quot;</span>, <span class="st">&quot;Frozen II&quot;</span>, <span class="st">&quot;IT Chapter Two&quot;</span>, <span class="st">&quot;Joker&quot;</span>, <span class="st">&quot;Spider-Man: Far from Home&quot;</span>, <span class="st">&quot;Star Wars: Episode IX&quot;</span>, <span class="st">&quot;The Lion King&quot;</span>, <span class="st">&quot;Toy Story 4&quot;</span>),</span>
+<span id="cb382-2"><a href="figurer-1.html#cb382-2" aria-hidden="true" tabindex="-1"></a><span class="at">amount =</span> <span class="fu">c</span>(<span class="dv">355772511</span>, <span class="dv">858373000</span>, <span class="dv">426829839</span>, <span class="dv">430144682</span>, <span class="dv">211593228</span>,<span class="dv">333772511</span>,<span class="dv">390532085</span>,  <span class="dv">390706234</span>,<span class="dv">543638043</span>,<span class="dv">434038008</span>))</span>
+<span id="cb382-3"><a href="figurer-1.html#cb382-3" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(boxoffice2019<span class="sc">$</span>amount, </span>
+<span id="cb382-4"><a href="figurer-1.html#cb382-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">names.arg=</span>boxoffice2019<span class="sc">$</span>title)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-370-1.png" width="768" style="display: block; margin: auto;" /></p>
+<div class="sourceCode" id="cb383"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb383-1"><a href="figurer-1.html#cb383-1" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(boxoffice2019<span class="sc">$</span>amount, </span>
+<span id="cb383-2"><a href="figurer-1.html#cb383-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">names.arg=</span>boxoffice2019<span class="sc">$</span>title, </span>
+<span id="cb383-3"><a href="figurer-1.html#cb383-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">las=</span><span class="dv">2</span>)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-370-2.png" width="768" style="display: block; margin: auto;" /></p>
+<div class="sourceCode" id="cb384"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb384-1"><a href="figurer-1.html#cb384-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">12</span>, <span class="dv">1</span>, <span class="dv">2</span>))</span>
+<span id="cb384-2"><a href="figurer-1.html#cb384-2" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(boxoffice2019<span class="sc">$</span>amount, </span>
+<span id="cb384-3"><a href="figurer-1.html#cb384-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">names.arg=</span>boxoffice2019<span class="sc">$</span>title, </span>
+<span id="cb384-4"><a href="figurer-1.html#cb384-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">horiz =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb384-5"><a href="figurer-1.html#cb384-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">las=</span><span class="dv">1</span>)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-370-3.png" width="768" style="display: block; margin: auto;" /></p>
+<div class="sourceCode" id="cb385"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb385-1"><a href="figurer-1.html#cb385-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>))</span>
+<span id="cb385-2"><a href="figurer-1.html#cb385-2" aria-hidden="true" tabindex="-1"></a>boxoffice2019_decreasing  <span class="ot">&lt;-</span> boxoffice2019[<span class="fu">order</span>(boxoffice2019[,<span class="dv">2</span>], <span class="at">decreasing=</span><span class="cn">FALSE</span>), ]</span>
+<span id="cb385-3"><a href="figurer-1.html#cb385-3" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">12</span>, <span class="dv">4</span>, <span class="dv">2</span>))</span>
+<span id="cb385-4"><a href="figurer-1.html#cb385-4" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(boxoffice2019_decreasing<span class="sc">$</span>amount<span class="sc">/</span><span class="dv">1000000</span>, </span>
+<span id="cb385-5"><a href="figurer-1.html#cb385-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">names.arg=</span>boxoffice2019_decreasing<span class="sc">$</span>title, </span>
+<span id="cb385-6"><a href="figurer-1.html#cb385-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">horiz =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb385-7"><a href="figurer-1.html#cb385-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">las=</span><span class="dv">1</span>, </span>
+<span id="cb385-8"><a href="figurer-1.html#cb385-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlab =</span> <span class="st">&quot;Miljoner USD&quot;</span>,</span>
+<span id="cb385-9"><a href="figurer-1.html#cb385-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">col =</span> <span class="st">&quot;lightblue&quot;</span>,</span>
+<span id="cb385-10"><a href="figurer-1.html#cb385-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">border =</span><span class="st">&quot;white&quot;</span>)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-370-4.png" width="768" style="display: block; margin: auto;" /></p>
+<p>När man har mångra kategorier lämpar sig dotcharts bättre. Vi ska se ett exempel på detta. I paketet <code>dslabs</code> finns datasetet <code>gapminder</code>. Vi läser in detta dataset för att jämföra europeiska länders förväntade livslängd. Vi ser också här ett exempel på när olika färger kan tillföra information gällande kategoritillhörighet.</p>
+<div class="sourceCode" id="cb386"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb386-1"><a href="figurer-1.html#cb386-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;dslabs&quot;</span>)</span>
+<span id="cb386-2"><a href="figurer-1.html#cb386-2" aria-hidden="true" tabindex="-1"></a>gapminderEurope2015 <span class="ot">&lt;-</span> gapminder[(gapminder<span class="sc">$</span>continent <span class="sc">==</span> <span class="st">&quot;Europe&quot;</span> <span class="sc">&amp;</span> gapminder<span class="sc">$</span>year <span class="sc">==</span> <span class="dv">2015</span>), ]</span>
+<span id="cb386-3"><a href="figurer-1.html#cb386-3" aria-hidden="true" tabindex="-1"></a>gapminderEurope2015<span class="sc">$</span>color <span class="ot">&lt;-</span> <span class="fu">factor</span>(gapminderEurope2015<span class="sc">$</span>region)</span>
+<span id="cb386-4"><a href="figurer-1.html#cb386-4" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(gapminderEurope2015<span class="sc">$</span>color)[<span class="fu">levels</span>(gapminderEurope2015<span class="sc">$</span>color) <span class="sc">==</span> <span class="st">&quot;Eastern Europe&quot;</span>] <span class="ot">&lt;-</span> <span class="st">&quot;coral2&quot;</span></span>
+<span id="cb386-5"><a href="figurer-1.html#cb386-5" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(gapminderEurope2015<span class="sc">$</span>color)[<span class="fu">levels</span>(gapminderEurope2015<span class="sc">$</span>color) <span class="sc">==</span> <span class="st">&quot;Western Europe&quot;</span>] <span class="ot">&lt;-</span> <span class="st">&quot;palegreen2&quot;</span></span>
+<span id="cb386-6"><a href="figurer-1.html#cb386-6" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(gapminderEurope2015<span class="sc">$</span>color)[<span class="fu">levels</span>(gapminderEurope2015<span class="sc">$</span>color) <span class="sc">==</span> <span class="st">&quot;Southern Europe&quot;</span>] <span class="ot">&lt;-</span> <span class="st">&quot;tan2&quot;</span></span>
+<span id="cb386-7"><a href="figurer-1.html#cb386-7" aria-hidden="true" tabindex="-1"></a><span class="fu">levels</span>(gapminderEurope2015<span class="sc">$</span>color)[<span class="fu">levels</span>(gapminderEurope2015<span class="sc">$</span>color) <span class="sc">==</span> <span class="st">&quot;Northern Europe&quot;</span>] <span class="ot">&lt;-</span> <span class="st">&quot;deepskyblue2&quot;</span></span>
+<span id="cb386-8"><a href="figurer-1.html#cb386-8" aria-hidden="true" tabindex="-1"></a>gapminderEurope2015decreasing <span class="ot">&lt;-</span> gapminderEurope2015[<span class="fu">order</span>(gapminderEurope2015<span class="sc">$</span>life_expectancy),]</span>
+<span id="cb386-9"><a href="figurer-1.html#cb386-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb386-10"><a href="figurer-1.html#cb386-10" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">12</span>, <span class="dv">1</span>, <span class="dv">2</span>))</span>
+<span id="cb386-11"><a href="figurer-1.html#cb386-11" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(gapminderEurope2015decreasing<span class="sc">$</span>life_expectancy, </span>
+<span id="cb386-12"><a href="figurer-1.html#cb386-12" aria-hidden="true" tabindex="-1"></a>        <span class="at">names.arg =</span> gapminderEurope2015decreasing<span class="sc">$</span>country,  </span>
+<span id="cb386-13"><a href="figurer-1.html#cb386-13" aria-hidden="true" tabindex="-1"></a>        <span class="at">horiz =</span> <span class="cn">TRUE</span>, </span>
+<span id="cb386-14"><a href="figurer-1.html#cb386-14" aria-hidden="true" tabindex="-1"></a>        <span class="at">las =</span> <span class="dv">2</span>,</span>
+<span id="cb386-15"><a href="figurer-1.html#cb386-15" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">90</span>), </span>
+<span id="cb386-16"><a href="figurer-1.html#cb386-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlab =</span> <span class="st">&quot;Life expectancy (years)&quot;</span>,</span>
+<span id="cb386-17"><a href="figurer-1.html#cb386-17" aria-hidden="true" tabindex="-1"></a>        <span class="at">col =</span> <span class="fu">as.character</span>(gapminderEurope2015<span class="sc">$</span>color),</span>
+<span id="cb386-18"><a href="figurer-1.html#cb386-18" aria-hidden="true" tabindex="-1"></a>        <span class="at">border =</span><span class="st">&quot;white&quot;</span>)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-371-1.png" width="768" style="display: block; margin: auto;" /></p>
+<div class="sourceCode" id="cb387"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb387-1"><a href="figurer-1.html#cb387-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))</span>
+<span id="cb387-2"><a href="figurer-1.html#cb387-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dotchart</span>(gapminderEurope2015<span class="sc">$</span>life_expectancy, </span>
+<span id="cb387-3"><a href="figurer-1.html#cb387-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">labels=</span> gapminderEurope2015<span class="sc">$</span>country,  </span>
+<span id="cb387-4"><a href="figurer-1.html#cb387-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">las =</span> <span class="dv">2</span>,</span>
+<span id="cb387-5"><a href="figurer-1.html#cb387-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">cex =</span> <span class="fl">0.8</span>, </span>
+<span id="cb387-6"><a href="figurer-1.html#cb387-6" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">90</span>),</span>
+<span id="cb387-7"><a href="figurer-1.html#cb387-7" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlab =</span> <span class="st">&quot;Life expectancy (years)&quot;</span>)</span>
+<span id="cb387-8"><a href="figurer-1.html#cb387-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb387-9"><a href="figurer-1.html#cb387-9" aria-hidden="true" tabindex="-1"></a><span class="fu">dotchart</span>(gapminderEurope2015decreasing<span class="sc">$</span>life_expectancy, </span>
+<span id="cb387-10"><a href="figurer-1.html#cb387-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">labels=</span> gapminderEurope2015decreasing<span class="sc">$</span>country,  </span>
+<span id="cb387-11"><a href="figurer-1.html#cb387-11" aria-hidden="true" tabindex="-1"></a>        <span class="at">las =</span> <span class="dv">2</span>,</span>
+<span id="cb387-12"><a href="figurer-1.html#cb387-12" aria-hidden="true" tabindex="-1"></a>        <span class="at">cex =</span> <span class="fl">0.8</span>, </span>
+<span id="cb387-13"><a href="figurer-1.html#cb387-13" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">90</span>),</span>
+<span id="cb387-14"><a href="figurer-1.html#cb387-14" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlab =</span> <span class="st">&quot;Life expectancy (years)&quot;</span>)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-371-2.png" width="768" style="display: block; margin: auto;" /></p>
+<div class="sourceCode" id="cb388"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb388-1"><a href="figurer-1.html#cb388-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dotchart</span>(gapminderEurope2015decreasing<span class="sc">$</span>life_expectancy, </span>
+<span id="cb388-2"><a href="figurer-1.html#cb388-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">labels=</span> gapminderEurope2015decreasing<span class="sc">$</span>country,  </span>
+<span id="cb388-3"><a href="figurer-1.html#cb388-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">las =</span> <span class="dv">2</span>,</span>
+<span id="cb388-4"><a href="figurer-1.html#cb388-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">cex =</span> <span class="fl">0.8</span>,</span>
+<span id="cb388-5"><a href="figurer-1.html#cb388-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlab =</span> <span class="st">&quot;Life expectancy (years)&quot;</span>,<span class="at">col =</span> <span class="fu">as.character</span>(gapminderEurope2015<span class="sc">$</span>color))</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-371-3.png" width="768" style="display: block; margin: auto;" /></p>
+</div>
+</div>
+<div id="cirkeldigram" class="section level2 hasAnchor" number="8.4">
+<h2><span class="header-section-number">8.4</span> Cirkeldigram<a href="figurer-1.html#cirkeldigram" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>R-manualen avråder från cirkeldiagram.</p>
+</div>
+<div id="figurer-för-fördelningar" class="section level2 hasAnchor" number="8.5">
+<h2><span class="header-section-number">8.5</span> Figurer för fördelningar<a href="figurer-1.html#figurer-för-fördelningar" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Histogram används för att visualisera en kontinuerlig variabel. Funktionen <strong><code>hist()</code></strong> skapar ett histogram. Nackdelen med histogram är att den är känslig för antalet klasser. Testa därför olika antal klasser.</p>
+<div class="sourceCode" id="cb389"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb389-1"><a href="figurer-1.html#cb389-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">2</span>))</span>
+<span id="cb389-2"><a href="figurer-1.html#cb389-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(df<span class="sc">$</span>gripstrength, <span class="at">xlab=</span><span class="st">&quot;Greppstyrka (Newton)&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Antal&quot;</span>, <span class="at">breaks=</span><span class="dv">7</span>, <span class="at">main=</span><span class="st">&quot;7 klasser&quot;</span>)</span>
+<span id="cb389-3"><a href="figurer-1.html#cb389-3" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(df<span class="sc">$</span>gripstrength, <span class="at">xlab=</span><span class="st">&quot;Greppstyrka (Newton)&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Antal&quot;</span>, <span class="at">breaks=</span><span class="dv">14</span>, <span class="at">main=</span><span class="st">&quot;14 klasser&quot;</span>)</span>
+<span id="cb389-4"><a href="figurer-1.html#cb389-4" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(df<span class="sc">$</span>gripstrength, <span class="at">xlab=</span><span class="st">&quot;Greppstyrka (Newton)&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Antal&quot;</span>, <span class="at">breaks=</span><span class="dv">28</span>, <span class="at">main=</span><span class="st">&quot;28 klasser&quot;</span>)</span>
+<span id="cb389-5"><a href="figurer-1.html#cb389-5" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(df<span class="sc">$</span>gripstrength, <span class="at">xlab=</span><span class="st">&quot;Greppstyrka (Newton)&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Antal&quot;</span>, <span class="at">breaks=</span><span class="dv">56</span>, <span class="at">main=</span><span class="st">&quot;56 klasser&quot;</span>)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-372-1.png" width="768" style="display: block; margin: auto;" /></p>
+</div>
+<div id="lådagram-1" class="section level2 hasAnchor" number="8.6">
+<h2><span class="header-section-number">8.6</span> Lådagram<a href="figurer-1.html#lådagram-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Lådagram används främst när vi ska jämföra fördelningar uppdelat på kategorier.
+Att använda lådagram för en enda variabel är inte optimalt, utan histogram ger då mer information.</p>
+<p>Vi vill studera testresultat uppdelat på psykologisk bedämning</p>
+<div class="sourceCode" id="cb390"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb390-1"><a href="figurer-1.html#cb390-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(df<span class="sc">$</span>gripstrength<span class="sc">~</span>df<span class="sc">$</span>psych, <span class="at">xlab=</span><span class="st">&quot;Psykologisk bedömning (1-9)&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Greppstyrka (Newton)&quot;</span>)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-373-1.png" width="672" style="display: block; margin: auto;" /></p>
+</div>
+<div id="spridningsdiagram-1" class="section level2 hasAnchor" number="8.7">
+<h2><span class="header-section-number">8.7</span> Spridningsdiagram<a href="figurer-1.html#spridningsdiagram-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Den vanligaste funktionen i R för att skapa figurer är <strong><code>plot()</code></strong>. Det finns många argument och i det närmaste obegränsade möjligher att anpassa figurerna.</p>
+<p>Nedan visar vi ett problem som kan uppkomma med spridningsdiagram, nämligen när vi har väldigt många datapunkter. Det första diagrammet redovisar de 500 första individerna i INSARK. Det andra diagrammet redovisar data från alla 709869 individer.</p>
+<div class="sourceCode" id="cb391"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb391-1"><a href="figurer-1.html#cb391-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(df<span class="sc">$</span>legstrength[<span class="dv">1</span><span class="sc">:</span><span class="dv">500</span>], df<span class="sc">$</span>armstrength[<span class="dv">1</span><span class="sc">:</span><span class="dv">500</span>], <span class="at">xlab =</span> <span class="st">&quot;Benstyrka (Newton)&quot;</span>, <span class="at">ylab =</span> <span class="st">&quot;Armstyrka (Newton)&quot;</span>)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-374-1.png" width="672" style="display: block; margin: auto;" /></p>
+<div class="sourceCode" id="cb392"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb392-1"><a href="figurer-1.html#cb392-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(df<span class="sc">$</span>legstrength, df<span class="sc">$</span>armstrength, <span class="at">xlab =</span> <span class="st">&quot;Benstyrka (Newton)&quot;</span>, <span class="at">ylab =</span> <span class="st">&quot;Armstyrka (Newton)&quot;</span>)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-374-2.png" width="672" style="display: block; margin: auto;" /></p>
+<p>Det blir, i det senare diagrammet, svårt att urskilja mönster eller trender i diagrammet, eftersom punkterna är så många. Denna problematik kommer lyftas fram mer under senare delar av kursen.</p>
+</div>
+<div id="exportera-figurer" class="section level2 hasAnchor" number="8.8">
+<h2><span class="header-section-number">8.8</span> Exportera figurer<a href="figurer-1.html#exportera-figurer" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Det finns ett antal olika format att exportera figurer till. Det absolut enklaste är använda <strong>Export</strong> i fliken <strong>Plots</strong>. Här väljer du antingen <em>Save as image…</em> eller <em>Save as PDF…</em></p>
+<ul>
+<li>PDF är ett bra format om man ska skriva ut. Det är vektorbaserat vilket innebär att det går bra att zooma in i bilden utan att upplösningen blir dålig. Figuren tar inte mycket minne.</li>
+<li>Formatet png är bitmap-baserat format som är utmärkt för webben. Ofta krävs, tyvärr, också png för ordbehandlingsprogram, vilket gör export av figurer med hög kvalitet krångligare, jämfört med PDF. Använd aldrig jpg, som är alternativet.</li>
+</ul>
+<p>Det finns dock ganska få inställningar i Export. Ett alternativ som ger mer flexibilitet är att skapa en PDF eller png från R och sen rita figuren på denna. Vi tittar på två exempel nedan, först ett för PDF och sedan ett för png.</p>
+<div class="sourceCode" id="cb393"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb393-1"><a href="figurer-1.html#cb393-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Skapa en PDF att rita. Storleken anges med width och height och dimensionen är tum. </span></span>
+<span id="cb393-2"><a href="figurer-1.html#cb393-2" aria-hidden="true" tabindex="-1"></a><span class="fu">pdf</span>(<span class="st">&quot;data/rplot.pdf&quot;</span>, <span class="at">width =</span> <span class="dv">8</span>, <span class="at">height =</span> <span class="dv">6</span>) </span>
+<span id="cb393-3"><a href="figurer-1.html#cb393-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Börja rita figuren på filen</span></span>
+<span id="cb393-4"><a href="figurer-1.html#cb393-4" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>), <span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">1</span>)) </span>
+<span id="cb393-5"><a href="figurer-1.html#cb393-5" aria-hidden="true" tabindex="-1"></a> <span class="fu">plot</span>(x1, y1, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">15</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">13</span>))</span>
+<span id="cb393-6"><a href="figurer-1.html#cb393-6" aria-hidden="true" tabindex="-1"></a> <span class="fu">lines</span>(x, Ey, <span class="at">col =</span> <span class="st">&quot;red&quot;</span>)</span>
+<span id="cb393-7"><a href="figurer-1.html#cb393-7" aria-hidden="true" tabindex="-1"></a> <span class="fu">plot</span>(x2, y2, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">15</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">13</span>))</span>
+<span id="cb393-8"><a href="figurer-1.html#cb393-8" aria-hidden="true" tabindex="-1"></a> <span class="fu">lines</span>(x, Ey, <span class="at">col =</span> <span class="st">&quot;red&quot;</span>)</span>
+<span id="cb393-9"><a href="figurer-1.html#cb393-9" aria-hidden="true" tabindex="-1"></a> <span class="fu">plot</span>(x3, y3, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">15</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">13</span>))</span>
+<span id="cb393-10"><a href="figurer-1.html#cb393-10" aria-hidden="true" tabindex="-1"></a> <span class="fu">lines</span>(x, Ey, <span class="at">col =</span> <span class="st">&quot;red&quot;</span>)</span>
+<span id="cb393-11"><a href="figurer-1.html#cb393-11" aria-hidden="true" tabindex="-1"></a> <span class="fu">plot</span>(x4, y4, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">15</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">13</span>))</span>
+<span id="cb393-12"><a href="figurer-1.html#cb393-12" aria-hidden="true" tabindex="-1"></a> <span class="fu">lines</span>(x, Ey, <span class="at">col =</span> <span class="st">&quot;red&quot;</span>)</span>
+<span id="cb393-13"><a href="figurer-1.html#cb393-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Stänger plot och sparar. Den sparas enligt sökvägen ovan.</span></span>
+<span id="cb393-14"><a href="figurer-1.html#cb393-14" aria-hidden="true" tabindex="-1"></a> <span class="fu">dev.off</span>()</span></code></pre></div>
+<div class="sourceCode" id="cb394"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb394-1"><a href="figurer-1.html#cb394-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Skapar en png att rita på. Storleken anges med width och height och dimensionen är cm (units). </span></span>
+<span id="cb394-2"><a href="figurer-1.html#cb394-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Upplösningen (dpi) är viktig för en bitmap-baserad fil. Förslagsvis används res = 1200 för utskrift och res = 72 webben eller skärmen. type = &quot;cairo&quot; anger att kantutjämning (antialias) ska användas, vilket ger snyggare utseende.</span></span>
+<span id="cb394-3"><a href="figurer-1.html#cb394-3" aria-hidden="true" tabindex="-1"></a><span class="fu">png</span>(<span class="st">&quot;data/rplot.png&quot;</span>, <span class="at">width =</span> <span class="dv">18</span>, <span class="at">height =</span> <span class="dv">14</span>, <span class="at">units =</span> <span class="st">&quot;cm&quot;</span>, <span class="at">res =</span> <span class="dv">1200</span>, <span class="at">type=</span><span class="st">&#39;cairo&#39;</span>)</span>
+<span id="cb394-4"><a href="figurer-1.html#cb394-4" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>), <span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">1</span>)) </span>
+<span id="cb394-5"><a href="figurer-1.html#cb394-5" aria-hidden="true" tabindex="-1"></a> <span class="fu">plot</span>(x1, y1, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">15</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">13</span>))</span>
+<span id="cb394-6"><a href="figurer-1.html#cb394-6" aria-hidden="true" tabindex="-1"></a> <span class="fu">lines</span>(x, Ey, <span class="at">col =</span> <span class="st">&quot;red&quot;</span>)</span>
+<span id="cb394-7"><a href="figurer-1.html#cb394-7" aria-hidden="true" tabindex="-1"></a> <span class="fu">plot</span>(x2, y2, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">15</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">13</span>))</span>
+<span id="cb394-8"><a href="figurer-1.html#cb394-8" aria-hidden="true" tabindex="-1"></a> <span class="fu">lines</span>(x, Ey, <span class="at">col =</span> <span class="st">&quot;red&quot;</span>)</span>
+<span id="cb394-9"><a href="figurer-1.html#cb394-9" aria-hidden="true" tabindex="-1"></a> <span class="fu">plot</span>(x3, y3, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">15</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">13</span>))</span>
+<span id="cb394-10"><a href="figurer-1.html#cb394-10" aria-hidden="true" tabindex="-1"></a> <span class="fu">lines</span>(x, Ey, <span class="at">col =</span> <span class="st">&quot;red&quot;</span>)</span>
+<span id="cb394-11"><a href="figurer-1.html#cb394-11" aria-hidden="true" tabindex="-1"></a> <span class="fu">plot</span>(x4, y4, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">15</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">13</span>))</span>
+<span id="cb394-12"><a href="figurer-1.html#cb394-12" aria-hidden="true" tabindex="-1"></a> <span class="fu">lines</span>(x, Ey, <span class="at">col =</span> <span class="st">&quot;red&quot;</span>)</span>
+<span id="cb394-13"><a href="figurer-1.html#cb394-13" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code></pre></div>
+<p>Avslutningsvis några tips:</p>
+<ul>
+<li>Bestäm bredd-höjd-relationen (aspect ratio) redan när du skapar figuren i R. Stretcha inte figuren efter att du skapat den! Kvaliteten kan försämras betydligt. Du kan dock eventuellt förminska och förstora figuren, så länge bredd-höjd-relationen bibehålls.</li>
+<li>Om det finns mycket vit yta, minska marginalerna med argumentet <code>mar</code> i <strong><code>par()</code></strong>funktionen.</li>
+<li>Om du skapar en stor figur, då måste du med t ex <code>cex</code>-argument i figuren, för att öka storleken på text. Ofta måste man prova sig fram. Var beredd på att ändra storlek på text och siffror i figuren.</li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="tabeller-1.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/latest.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
