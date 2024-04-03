@@ -565,7 +565,7 @@ div.yellow{ background-color:#FFFA94; border-radius: 5px; padding: 20px;}
 <p>I fall där frekvenstabeller blir stökiga på grund av ett stort antal olika variabelvärden kan <strong>histogram</strong> användas som ett mer kompakt alternativ. Histogram används huvudsakligen för att ge en bild av hur kontinuerliga variabler är fördelade, men de kan också användas för diskreta variabler med väldigt många olika variabelvärden.</p>
 <p>I <code>R</code> skapas histogram med funktionen <strong><code>hist()</code></strong>. Ett enkelt histogram över variabeln <code>fev</code> skapas med koden nedan.</p>
 <div class="sourceCode" id="cb325"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb325-1"><a href="kvantitativa-variabler.html#cb325-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(fev)  <span class="co"># Histogram över fev</span></span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-300-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-300-1.png" width="672" style="display: block; margin: auto;" /></p>
 <div id="etiketter" class="section level5 hasAnchor" number="6.1.3.0.1">
 <h5><span class="header-section-number">6.1.3.0.1</span> Etiketter<a href="kvantitativa-variabler.html#etiketter" class="anchor-section" aria-label="Anchor link to header"></a></h5>
 <p>Funktionen <strong><code>hist()</code></strong> har väldigt många olika argument som kan användas för att justera diagrammet som skapas. Tre alternativ som är bra att känna till är <code>main</code>, <code>xlab</code>, och <code>ylab</code>. Med hjälp av dessa justeras diagrammets titel, samt texten som hör till varje axel. Med koden nedan ändras dessa argument för att skapa ett mer informativt diagram.</p>
@@ -582,7 +582,7 @@ Visa figur
 </button>
 <div id="hist_labs" style="display:none">
 <div class="alert alert-info">
-<p><img src="_main_files/figure-html/unnamed-chunk-302-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-302-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 </div>
 <p></br></p>
@@ -603,7 +603,7 @@ Visa figur
 </button>
 <div id="hist_lims" style="display:none">
 <div class="alert alert-info">
-<p><img src="_main_files/figure-html/unnamed-chunk-304-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-304-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 </div>
 <p></br></p>
@@ -627,7 +627,7 @@ Visa figur
 </button>
 <div id="hist_counts" style="display:none">
 <div class="alert alert-info">
-<p><img src="_main_files/figure-html/unnamed-chunk-307-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-307-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 </div>
 <p></br></p>
@@ -643,7 +643,7 @@ Visa figur
 </button>
 <div id="hist_breaks" style="display:none">
 <div class="alert alert-info">
-<p><img src="_main_files/figure-html/unnamed-chunk-309-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-309-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 </div>
 <p></br></p>
@@ -655,7 +655,7 @@ Visa figur
 </button>
 <div id="hist_breaks1" style="display:none">
 <div class="alert alert-info">
-<p><img src="_main_files/figure-html/unnamed-chunk-311-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-311-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 </div>
 <p></br></p>
@@ -674,7 +674,7 @@ Visa figur
 <span id="cb332-5"><a href="kvantitativa-variabler.html#cb332-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">breaks =</span> <span class="dv">20</span>,              <span class="co"># Antal klasser</span></span>
 <span id="cb332-6"><a href="kvantitativa-variabler.html#cb332-6" aria-hidden="true" tabindex="-1"></a>     <span class="at">border =</span> <span class="cn">FALSE</span>,           <span class="co"># Tar bort kant runt staplar</span></span>
 <span id="cb332-7"><a href="kvantitativa-variabler.html#cb332-7" aria-hidden="true" tabindex="-1"></a>     <span class="at">col =</span> <span class="st">&quot;plum&quot;</span>)             <span class="co"># Ändrar färg på staplarna</span></span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-312-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-312-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p><img src="docs/images/note.png" width="5%" style="display: block; margin: auto;" /></p>
 <style>
 div.yellow{ background-color:#FFFA94; border-radius: 5px; padding: 20px;}
@@ -683,7 +683,7 @@ div.yellow{ background-color:#FFFA94; border-radius: 5px; padding: 20px;}
 <p><font size="4"> Klassgränser och antalet klasser </font></p>
 <p>Valen som görs ovan är naturligtvis subjektiva, och det finns inget som säger vad som är snyggt eller inte. Det är dock bra att tänka lite extra på hur klassgränser och antalet klasser specificeras i ett histogram, eftersom detta kan påverka hur väl diagrammet faktiskt speglar datamaterialet.</p>
 <p>Här nedan illustreras samma datamaterial i fyra histogram med olika klassgränser och antal klasser. Datamaterialet som illustreras är normalfördelat, vilket tydligt kan ses i figurerna längst upp till vänster och längst ner till höger. I de övriga diagrammen är det svårt att säga något som helst om huruvida datamaterialet är normalfördelat eller ej.</p>
-<p><img src="_main_files/figure-html/unnamed-chunk-315-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-315-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>Det är därför värt att testa ett par olika alternativ innan ett slutligt diagram väljs, för att hitta den inställning som illustrerar datamaterialet så bra som möjligt.</p>
 </div>
 <p></br></p>
@@ -701,7 +701,7 @@ div.yellow{ background-color:#FFFA94; border-radius: 5px; padding: 20px;}
 <p>Många gånger kan det vara av intresse att skapa en figur för att se om två kontinuerliga variabler samvarierar på något sätt, och då är spridningsdiagram (scatter plot) ett bra alternativ. Spridningsdiagram skapas med det generiska kommandot <code>plot()</code> i <code>R</code>, och kan till stor del justeras på samma sätt som histogrammen ovan.</p>
 <p>För att skapa ett vanligt spridningsdiagram där <code>height</code> finns <span class="math inline">\(x\)</span>-axeln och <code>fev</code> finns på <span class="math inline">\(y\)</span>-axeln används koden nedan.</p>
 <div class="sourceCode" id="cb333"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb333-1"><a href="kvantitativa-variabler.html#cb333-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="at">x =</span> height, <span class="at">y =</span> fev)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-316-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-316-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>I figuren kan cirklarna som representerar varje observation bytas ut till andra symboler, detta görs genom att ändra argumentet <code>pch</code> till ett siffervärde mellan 0 och 25. Till exempel kan cirklarna bytas ut till kvadrater med hjälp av koden nedan (en sida som sammanfattar vilket siffervärde som ger vilken symbol finns <a href="http://www.sthda.com/english/wiki/r-plot-pch-symbols-the-different-point-shapes-available-in-r">här</a>.</p>
 <div class="sourceCode" id="cb334"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb334-1"><a href="kvantitativa-variabler.html#cb334-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="at">x =</span> height, <span class="at">y =</span> fev, <span class="at">pch =</span> <span class="dv">0</span>)</span></code></pre></div>
 <button title="scat_square" type="button" onclick="if(document.getElementById(&#39;scat_square&#39;) .style.display==&#39;none&#39;)
@@ -711,7 +711,7 @@ Visa figur
 </button>
 <div id="scat_square" style="display:none">
 <div class="alert alert-info">
-<p><img src="_main_files/figure-html/unnamed-chunk-318-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-318-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 </div>
 <p></br></p>
@@ -728,13 +728,13 @@ Visa figur
 <span id="cb335-4"><a href="kvantitativa-variabler.html#cb335-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">&quot;Längd&quot;</span>,            <span class="co"># Etikett till x-axel</span></span>
 <span id="cb335-5"><a href="kvantitativa-variabler.html#cb335-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">pch =</span> <span class="dv">16</span>,                  <span class="co"># Ifylld punkt som markör</span></span>
 <span id="cb335-6"><a href="kvantitativa-variabler.html#cb335-6" aria-hidden="true" tabindex="-1"></a>     <span class="at">col =</span> <span class="st">&quot;blue&quot;</span>)              <span class="co"># Ändrar färg på punkterna</span></span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-319-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-319-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="pearsons-korrelationskoefficient" class="section level4 hasAnchor" number="6.2.1.2">
 <h4><span class="header-section-number">6.2.1.2</span> Pearsons korrelationskoefficient<a href="kvantitativa-variabler.html#pearsons-korrelationskoefficient" class="anchor-section" aria-label="Anchor link to header"></a></h4>
 <p>Pearsons korrelationskoefficient är ofta ett bra komplement till ett spridningsdiagram. Korrelationskoefficienten kan ta värden mellan -1 och 1, och mäter hur pass linjär samvariationen mellan två <strong>kontinuerliga</strong> variabler är, alltså hur väl punkterna i spridningsdiagrammet är samlade runt en rät linje.</p>
 <p>En korrelationskoefficient som ligger nära 1 tyder på stark, positiv samvariation. Om den ena variabeln har ett högt värde, är det högst troligt att även den andra har det (se den översta figuren här nedan). Motsvarande gäller för obseravtioner med låga värden. En korrelationskoefficient på -1 tyder på det motsatta, om den ena variabeln har ett högt värde förväntas den andra variabeln ha ett lågt värde (se den mellersta figuren här nedan). Slutligen tyder en korrelationskoefficient nära 0 på att ingen linjär smavariation finns, punkterna bör alltså vara spridda slumpmässigt i diagrammet (se den nedre figuren här nedan).</p>
-<p><img src="_main_files/figure-html/unnamed-chunk-321-1.png" width="672" style="display: block; margin: auto;" /><img src="_main_files/figure-html/unnamed-chunk-321-2.png" width="672" style="display: block; margin: auto;" /><img src="_main_files/figure-html/unnamed-chunk-321-3.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-321-1.png" width="672" style="display: block; margin: auto;" /><img src="docs/images/unnamed-chunk-321-2.png" width="672" style="display: block; margin: auto;" /><img src="docs/images/unnamed-chunk-321-3.png" width="672" style="display: block; margin: auto;" /></p>
 <p>I <code>R</code> beräknas stickproveskorrelationen mellan två variabler med hjälp av funktionen <code>cor()</code>. Stickprovskorrelationen mellan <code>height</code> och <code>fev</code> beräknas
 som</p>
 <div class="sourceCode" id="cb336"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb336-1"><a href="kvantitativa-variabler.html#cb336-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor</span>(<span class="at">x =</span> height, <span class="at">y =</span> fev)          </span>
@@ -772,7 +772,7 @@ Visa datamaterial
 <span id="cb339-4"><a href="kvantitativa-variabler.html#cb339-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">xlab =</span> <span class="st">&quot;&quot;</span>,      <span class="co"># Etikett till x-axel</span></span>
 <span id="cb339-5"><a href="kvantitativa-variabler.html#cb339-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">pch =</span> <span class="dv">16</span>,       <span class="co"># Ifylld punkt som markör</span></span>
 <span id="cb339-6"><a href="kvantitativa-variabler.html#cb339-6" aria-hidden="true" tabindex="-1"></a>     <span class="at">col =</span> <span class="st">&quot;blue&quot;</span>)   <span class="co"># Ändrar färg på punkterna</span></span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-326-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-326-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>Som synes finns en tydlig, <strong>icke-linjär</strong>, samvariation variablerna emellan, vilket inte framgår av korrelationskoefficienten. Slutsatsen om brist på samvariation skulle därför vara fel.</p>
 <p>Det är alltså viktigt att komma ihåg att <strong>korrelationskoefficienten bara mäter hur pass väl punkterna samlar sig runt en rät linje</strong>, och variablerna <strong>inte</strong> kan betraktas som helt oberoende bara för att korrelationskoefficienten är (när) 0. En analys som bygger på oberoende variabler skulle i detta fallet bli missvisande.</p>
 </div>
@@ -787,14 +787,14 @@ Visa datamaterial
 <p>Lådagram kan ses och tolkas som motsvarigheten till ett spridningsdiagram, med skillnaden att det i detta fall illustrerar en kontinuerlig och en diskret variabel. På samma sätt som spridningsdiagramet ger lådagrammet en uppfattning om hur två variabler samvarierar, och ger även en bild av hur de båda variablernas spridning ser ut.</p>
 <p>För att skapa lådagram används funktionen <code>boxplot()</code>, och argumentet som används är av formen <code>y ~ x</code>, där <code>y</code> är den kontinuerliga variabeln, och <code>x</code> är den diskreta. För att skapa ett lådagram som illustrerar samvariationen mellan <code>fev</code> och <code>age</code> kan ett lådagram skapas som nedan.</p>
 <div class="sourceCode" id="cb340"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb340-1"><a href="kvantitativa-variabler.html#cb340-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(fev <span class="sc">~</span> age)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-327-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-327-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>För att göra ett diagram med liggande lådor används argumentet <code>horizontal = TRUE</code>, och precis som i tidigare diagram kan såväl <code>main</code> som <code>xlab</code>, <code>ylab</code>, och <code>col</code> för att justera histogrammets utseende. Ett modifierat lådagram kan skapas med hjälp av koden nedan.</p>
 <div class="sourceCode" id="cb341"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb341-1"><a href="kvantitativa-variabler.html#cb341-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(fev <span class="sc">~</span> age,                <span class="co"># Variabler som används</span></span>
 <span id="cb341-2"><a href="kvantitativa-variabler.html#cb341-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">ylab =</span> <span class="st">&quot;Ålder&quot;</span>,           <span class="co"># Etikett till y-axel</span></span>
 <span id="cb341-3"><a href="kvantitativa-variabler.html#cb341-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlab =</span> <span class="st">&quot;FEV (liter/sek)&quot;</span>, <span class="co"># Etikett till x-axel</span></span>
 <span id="cb341-4"><a href="kvantitativa-variabler.html#cb341-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">horizontal =</span> <span class="cn">TRUE</span>,        <span class="co"># Ger liggande lådor</span></span>
 <span id="cb341-5"><a href="kvantitativa-variabler.html#cb341-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">col =</span> <span class="st">&quot;lightblue&quot;</span>)        <span class="co"># Ändrar färg på lådorna</span></span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-328-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-328-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="uppdelade-histogram" class="section level4 hasAnchor" number="6.2.2.2">
 <h4><span class="header-section-number">6.2.2.2</span> Uppdelade histogram<a href="kvantitativa-variabler.html#uppdelade-histogram" class="anchor-section" aria-label="Anchor link to header"></a></h4>
@@ -805,7 +805,7 @@ Visa datamaterial
 <div class="sourceCode" id="cb342"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb342-1"><a href="kvantitativa-variabler.html#cb342-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>))                <span class="co"># Två figurer bredvid varandra</span></span>
 <span id="cb342-2"><a href="kvantitativa-variabler.html#cb342-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(fev[age <span class="sc">==</span> <span class="dv">5</span>], <span class="at">col =</span> <span class="st">&quot;red&quot;</span>)    <span class="co"># Histogram över femåringar</span></span>
 <span id="cb342-3"><a href="kvantitativa-variabler.html#cb342-3" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(fev[age <span class="sc">==</span> <span class="dv">10</span>], <span class="at">col =</span> <span class="st">&quot;blue&quot;</span>)  <span class="co"># Histogram över tioåringar</span></span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-329-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-329-1.png" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb343"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb343-1"><a href="kvantitativa-variabler.html#cb343-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>))                <span class="co"># Återställer default</span></span></code></pre></div>
 <p>Det går även att lägga till flera rader med figurer vid behov. För att skapa två figurer till under de som gjordes ovan ändras även <code>rader</code> till <code>2</code>. Detta ger resultatet nedan.</p>
 <div class="sourceCode" id="cb344"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb344-1"><a href="kvantitativa-variabler.html#cb344-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>))                  <span class="co"># Två figurer bredvid varandra</span></span>
@@ -813,7 +813,7 @@ Visa datamaterial
 <span id="cb344-3"><a href="kvantitativa-variabler.html#cb344-3" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(fev[age <span class="sc">==</span> <span class="dv">10</span>], <span class="at">col =</span> <span class="st">&quot;blue&quot;</span>)    <span class="co"># Histogram över tioåringar</span></span>
 <span id="cb344-4"><a href="kvantitativa-variabler.html#cb344-4" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(fev[age <span class="sc">==</span> <span class="dv">3</span>], <span class="at">col =</span> <span class="st">&quot;green&quot;</span>)    <span class="co"># Histogram över ettåringar</span></span>
 <span id="cb344-5"><a href="kvantitativa-variabler.html#cb344-5" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(fev[age <span class="sc">==</span> <span class="dv">15</span>], <span class="at">col =</span> <span class="st">&quot;yellow&quot;</span>)  <span class="co"># Histogram över femtonåringar</span></span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-330-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-330-1.png" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb345"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb345-1"><a href="kvantitativa-variabler.html#cb345-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>))                  <span class="co"># Återställer default</span></span></code></pre></div>
 <p>Notera att figureran blir ihoptryckta när det läggs bredvid/ovanpå varandra. Det är därför bra att inte rada upp/stapla för många diagram i samma figur, då detta kan påverka diagrammens tydlighet.</p>
 </div>
@@ -855,7 +855,7 @@ Visa svar
 <span id="cb347-5"><a href="kvantitativa-variabler.html#cb347-5" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> [<span class="dv">1</span>] <span class="fl">7.73</span> <span class="fl">1.77</span> <span class="fl">2.42</span> <span class="fl">5.33</span> <span class="fl">4.22</span> <span class="fl">6.71</span></span></code></pre></div>
 <p>Som synes är <code>class</code> en kavantitativ variabel, och den verkar även vara kontinuerlig (dess värden är inte heltal), därför skulle variabeln lämpligen kunna beskrivas med hjälp av ett histogram.</p>
 <div class="sourceCode" id="cb348"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb348-1"><a href="kvantitativa-variabler.html#cb348-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(df<span class="sc">$</span>value1, <span class="at">xlab =</span> <span class="st">&quot;Value&quot;</span>, <span class="at">main =</span> <span class="st">&quot;Histogram över &#39;value&#39;&quot;</span>)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-333-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-333-1.png" width="672" style="display: block; margin: auto;" /></p>
 <hr />
 <p><strong><code>value2</code></strong></p>
 <div class="sourceCode" id="cb349"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb349-1"><a href="kvantitativa-variabler.html#cb349-1" aria-hidden="true" tabindex="-1"></a><span class="fu">class</span>(df<span class="sc">$</span>value2)  <span class="co"># Kollar vektortyp</span></span>
@@ -872,7 +872,7 @@ Visa svar
 <span id="cb350-6"><a href="kvantitativa-variabler.html#cb350-6" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> <span class="dv">127</span> <span class="dv">112</span> <span class="dv">151</span> <span class="dv">110</span></span></code></pre></div>
 <p>eller eventuellt ett stapeldiagram</p>
 <div class="sourceCode" id="cb351"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb351-1"><a href="kvantitativa-variabler.html#cb351-1" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(tab_v2, <span class="at">ylab =</span> <span class="st">&quot;Frekvens&quot;</span>)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-336-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-336-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 </div>
 <p></br></p>
@@ -888,7 +888,7 @@ Visa svar
 <div class="alert alert-info">
 <p>Eftersom <code>value1</code> är kontinuerlig och <code>value2</code> är diskret behövs ett diagram som klarar av att kombinera dessa två variabeltyper. Enligt kapiteltextens resonemang bör denna typ av variabelkomination illustreras med en box plot.</p>
 <div class="sourceCode" id="cb352"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb352-1"><a href="kvantitativa-variabler.html#cb352-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(df<span class="sc">$</span>value1 <span class="sc">~</span> df<span class="sc">$</span>value2)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-337-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-337-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p>Att döma av figuren ser det ut som att <code>value1</code> stiger när <code>value2</code> också gör det. Du kommer lära dig mer om hur sambandet kan kvantifieras/testas i senare delar av kursen.</p>
 </div>
 </div>
@@ -916,7 +916,7 @@ Visa svar
 <div class="sourceCode" id="cb354"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb354-1"><a href="kvantitativa-variabler.html#cb354-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>)) <span class="co"># Två kolumner, en rad</span></span>
 <span id="cb354-2"><a href="kvantitativa-variabler.html#cb354-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(df<span class="sc">$</span>value1, <span class="at">main =</span> <span class="st">&quot;Value 1&quot;</span>)</span>
 <span id="cb354-3"><a href="kvantitativa-variabler.html#cb354-3" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(df<span class="sc">$</span>value3, <span class="at">main =</span> <span class="st">&quot;Value 3&quot;</span>)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-339-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-339-1.png" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb355"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb355-1"><a href="kvantitativa-variabler.html#cb355-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>)) <span class="co"># Återställer grundinställning</span></span></code></pre></div>
 </div>
 </div>
@@ -935,7 +935,7 @@ Visa svar
 <div class="sourceCode" id="cb356"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb356-1"><a href="kvantitativa-variabler.html#cb356-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="at">x =</span> df<span class="sc">$</span>value1, <span class="at">y =</span> df<span class="sc">$</span>value3,   <span class="co"># Anger variabler</span></span>
 <span id="cb356-2"><a href="kvantitativa-variabler.html#cb356-2" aria-hidden="true" tabindex="-1"></a>     <span class="at">pch =</span> <span class="dv">20</span>,                       <span class="co"># Byter stil på punkterna</span></span>
 <span id="cb356-3"><a href="kvantitativa-variabler.html#cb356-3" aria-hidden="true" tabindex="-1"></a>     <span class="at">col =</span> <span class="st">&quot;forestgreen&quot;</span>)            <span class="co"># Byter färg på punkterna</span></span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-340-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-340-1.png" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb357"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb357-1"><a href="kvantitativa-variabler.html#cb357-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cor</span>(df<span class="sc">$</span>value1, df<span class="sc">$</span>value3) </span>
 <span id="cb357-2"><a href="kvantitativa-variabler.html#cb357-2" aria-hidden="true" tabindex="-1"></a><span class="sc">&gt;</span> [<span class="dv">1</span>] <span class="fl">0.9317125</span></span></code></pre></div>
 <p>korrelationen är väldigt hög, och spridningsdiagrammet antyder att ett linjärt samband finns (dock är det omöjligt säga om det är ett orsakssamband eller ej).</p>
@@ -948,7 +948,7 @@ Visa svar
 <span id="cb358-4"><a href="kvantitativa-variabler.html#cb358-4" aria-hidden="true" tabindex="-1"></a>     <span class="at">pch =</span> <span class="dv">20</span>,                         <span class="co"># Byter stil på punkterna</span></span>
 <span id="cb358-5"><a href="kvantitativa-variabler.html#cb358-5" aria-hidden="true" tabindex="-1"></a>     <span class="at">col =</span> <span class="st">&quot;forestgreen&quot;</span>)              <span class="co"># Byter färg på punkterna</span></span>
 <span id="cb358-6"><a href="kvantitativa-variabler.html#cb358-6" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(regressionsmodell, <span class="at">col =</span> <span class="st">&quot;red&quot;</span>) <span class="co"># Ritar regressionslinje</span></span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-341-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-341-1.png" width="672" style="display: block; margin: auto;" /></p>
 <p><strong>Notera att detta inte är något du förväntas kunna ännu, utan det är bara för den intresserade.</strong></p>
 </div>
 </div>
