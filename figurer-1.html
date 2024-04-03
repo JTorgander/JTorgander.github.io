@@ -429,7 +429,7 @@ Visa figurkod
 <span id="cb379-15"><a href="figurer-1.html#cb379-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Skapa en figur för x1 och y1. Ritar sedan en regressionslinje med lines()</span></span>
 <span id="cb379-16"><a href="figurer-1.html#cb379-16" aria-hidden="true" tabindex="-1"></a> <span class="fu">plot</span>(x1, y1)</span>
 <span id="cb379-17"><a href="figurer-1.html#cb379-17" aria-hidden="true" tabindex="-1"></a> <span class="fu">lines</span>(x, Ey)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-366-1.png" width="384" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-366-1.png" width="384" style="display: block; margin: auto;" /></p>
 <p>För det andra omges målarduken av en ram, så kallade marginaler. Genom att använda funktionen <strong><code>par(mar = c(5.1, 4.1, 4.1, 2.1))</code></strong>, värdena är default-inställningen på marginalernas storlek, kan vi enkelt ändra marginalernas storlek. Figuren nedan illusterar målarduken i mitten med marginalerna omkring. Ordningen på värdena korresponderar till respektive marginals position. Det finns en nedre marginal (1), en vänstermarginal (2), en övre marginal (3) och en högermarginal (4).</p>
 <p><img src="docs/images/margins.jpg" width="70%" style="background-color: #414244 ; padding:1px; display: inline-block;" style="display: block; margin: auto;" /></p>
 <p>Genom att ändra värdena ser vi att marginalernas storlek ändras. Det är mycket vanligt att justera marginalernas storlek eftersom onödiga vita ytor inte är önsvärda i en figur. Det kan också vara så att marginalers storlek måste utökas på grund att delar i figuren, t ex kategori- och/eller variabelnamn, annars inte får plats. Ett sådant exempel återges i Kapitel 5, närmare bestämt i avsnittet om Likert-figurer.</p>
@@ -445,7 +445,7 @@ Visa figurkod
 <span id="cb380-8"><a href="figurer-1.html#cb380-8" aria-hidden="true" tabindex="-1"></a> <span class="fu">lines</span>(x, Ey, <span class="at">col =</span> <span class="st">&quot;red&quot;</span>)</span>
 <span id="cb380-9"><a href="figurer-1.html#cb380-9" aria-hidden="true" tabindex="-1"></a> <span class="fu">plot</span>(x4, y4, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">15</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">13</span>))</span>
 <span id="cb380-10"><a href="figurer-1.html#cb380-10" aria-hidden="true" tabindex="-1"></a> <span class="fu">lines</span>(x, Ey, <span class="at">col =</span> <span class="st">&quot;red&quot;</span>)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-368-1.png" width="576" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-368-1.png" width="576" style="display: block; margin: auto;" /></p>
 <p>Vi är dock inte helt nöjda med ovanstående figur, utan vi tycker det finns för mycket vit yta mellan diagrammen. Vi kombineras de bägge argumenten i <strong><code>par()</code></strong> med målet att ha fyra diagram i en figur, men med mindre marginaler. Nu ser det bättre ut!</p>
 <div class="sourceCode" id="cb381"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb381-1"><a href="figurer-1.html#cb381-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Skapa fyra diagram i en figur. Fyller på med en linje med lines()</span></span>
 <span id="cb381-2"><a href="figurer-1.html#cb381-2" aria-hidden="true" tabindex="-1"></a> <span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>), <span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">4</span>, <span class="dv">1</span>, <span class="dv">1</span>)) </span>
@@ -457,7 +457,7 @@ Visa figurkod
 <span id="cb381-8"><a href="figurer-1.html#cb381-8" aria-hidden="true" tabindex="-1"></a> <span class="fu">lines</span>(x, Ey, <span class="at">col =</span> <span class="st">&quot;red&quot;</span>)</span>
 <span id="cb381-9"><a href="figurer-1.html#cb381-9" aria-hidden="true" tabindex="-1"></a> <span class="fu">plot</span>(x4, y4, <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">15</span>), <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">4</span>,<span class="dv">13</span>))</span>
 <span id="cb381-10"><a href="figurer-1.html#cb381-10" aria-hidden="true" tabindex="-1"></a> <span class="fu">lines</span>(x, Ey, <span class="at">col =</span> <span class="st">&quot;red&quot;</span>)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-369-1.png" width="576" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-369-1.png" width="576" style="display: block; margin: auto;" /></p>
 </div>
 <div id="färger-och-figurer" class="section level2 hasAnchor" number="8.3">
 <h2><span class="header-section-number">8.3</span> Färger och figurer<a href="figurer-1.html#färger-och-figurer" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -480,17 +480,17 @@ Visa figurkod
 <span id="cb382-2"><a href="figurer-1.html#cb382-2" aria-hidden="true" tabindex="-1"></a><span class="at">amount =</span> <span class="fu">c</span>(<span class="dv">355772511</span>, <span class="dv">858373000</span>, <span class="dv">426829839</span>, <span class="dv">430144682</span>, <span class="dv">211593228</span>,<span class="dv">333772511</span>,<span class="dv">390532085</span>,  <span class="dv">390706234</span>,<span class="dv">543638043</span>,<span class="dv">434038008</span>))</span>
 <span id="cb382-3"><a href="figurer-1.html#cb382-3" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(boxoffice2019<span class="sc">$</span>amount, </span>
 <span id="cb382-4"><a href="figurer-1.html#cb382-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">names.arg=</span>boxoffice2019<span class="sc">$</span>title)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-370-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-370-1.png" width="768" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb383"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb383-1"><a href="figurer-1.html#cb383-1" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(boxoffice2019<span class="sc">$</span>amount, </span>
 <span id="cb383-2"><a href="figurer-1.html#cb383-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">names.arg=</span>boxoffice2019<span class="sc">$</span>title, </span>
 <span id="cb383-3"><a href="figurer-1.html#cb383-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">las=</span><span class="dv">2</span>)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-370-2.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-370-2.png" width="768" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb384"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb384-1"><a href="figurer-1.html#cb384-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">12</span>, <span class="dv">1</span>, <span class="dv">2</span>))</span>
 <span id="cb384-2"><a href="figurer-1.html#cb384-2" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(boxoffice2019<span class="sc">$</span>amount, </span>
 <span id="cb384-3"><a href="figurer-1.html#cb384-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">names.arg=</span>boxoffice2019<span class="sc">$</span>title, </span>
 <span id="cb384-4"><a href="figurer-1.html#cb384-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">horiz =</span> <span class="cn">TRUE</span>, </span>
 <span id="cb384-5"><a href="figurer-1.html#cb384-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">las=</span><span class="dv">1</span>)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-370-3.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-370-3.png" width="768" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb385"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb385-1"><a href="figurer-1.html#cb385-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">1</span>))</span>
 <span id="cb385-2"><a href="figurer-1.html#cb385-2" aria-hidden="true" tabindex="-1"></a>boxoffice2019_decreasing  <span class="ot">&lt;-</span> boxoffice2019[<span class="fu">order</span>(boxoffice2019[,<span class="dv">2</span>], <span class="at">decreasing=</span><span class="cn">FALSE</span>), ]</span>
 <span id="cb385-3"><a href="figurer-1.html#cb385-3" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">4</span>, <span class="dv">12</span>, <span class="dv">4</span>, <span class="dv">2</span>))</span>
@@ -501,7 +501,7 @@ Visa figurkod
 <span id="cb385-8"><a href="figurer-1.html#cb385-8" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlab =</span> <span class="st">&quot;Miljoner USD&quot;</span>,</span>
 <span id="cb385-9"><a href="figurer-1.html#cb385-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">col =</span> <span class="st">&quot;lightblue&quot;</span>,</span>
 <span id="cb385-10"><a href="figurer-1.html#cb385-10" aria-hidden="true" tabindex="-1"></a>        <span class="at">border =</span><span class="st">&quot;white&quot;</span>)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-370-4.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-370-4.png" width="768" style="display: block; margin: auto;" /></p>
 <p>När man har mångra kategorier lämpar sig dotcharts bättre. Vi ska se ett exempel på detta. I paketet <code>dslabs</code> finns datasetet <code>gapminder</code>. Vi läser in detta dataset för att jämföra europeiska länders förväntade livslängd. Vi ser också här ett exempel på när olika färger kan tillföra information gällande kategoritillhörighet.</p>
 <div class="sourceCode" id="cb386"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb386-1"><a href="figurer-1.html#cb386-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;dslabs&quot;</span>)</span>
 <span id="cb386-2"><a href="figurer-1.html#cb386-2" aria-hidden="true" tabindex="-1"></a>gapminderEurope2015 <span class="ot">&lt;-</span> gapminder[(gapminder<span class="sc">$</span>continent <span class="sc">==</span> <span class="st">&quot;Europe&quot;</span> <span class="sc">&amp;</span> gapminder<span class="sc">$</span>year <span class="sc">==</span> <span class="dv">2015</span>), ]</span>
@@ -521,7 +521,7 @@ Visa figurkod
 <span id="cb386-16"><a href="figurer-1.html#cb386-16" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlab =</span> <span class="st">&quot;Life expectancy (years)&quot;</span>,</span>
 <span id="cb386-17"><a href="figurer-1.html#cb386-17" aria-hidden="true" tabindex="-1"></a>        <span class="at">col =</span> <span class="fu">as.character</span>(gapminderEurope2015<span class="sc">$</span>color),</span>
 <span id="cb386-18"><a href="figurer-1.html#cb386-18" aria-hidden="true" tabindex="-1"></a>        <span class="at">border =</span><span class="st">&quot;white&quot;</span>)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-371-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-371-1.png" width="768" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb387"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb387-1"><a href="figurer-1.html#cb387-1" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>))</span>
 <span id="cb387-2"><a href="figurer-1.html#cb387-2" aria-hidden="true" tabindex="-1"></a><span class="fu">dotchart</span>(gapminderEurope2015<span class="sc">$</span>life_expectancy, </span>
 <span id="cb387-3"><a href="figurer-1.html#cb387-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">labels=</span> gapminderEurope2015<span class="sc">$</span>country,  </span>
@@ -536,13 +536,13 @@ Visa figurkod
 <span id="cb387-12"><a href="figurer-1.html#cb387-12" aria-hidden="true" tabindex="-1"></a>        <span class="at">cex =</span> <span class="fl">0.8</span>, </span>
 <span id="cb387-13"><a href="figurer-1.html#cb387-13" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlim =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">90</span>),</span>
 <span id="cb387-14"><a href="figurer-1.html#cb387-14" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlab =</span> <span class="st">&quot;Life expectancy (years)&quot;</span>)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-371-2.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-371-2.png" width="768" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb388"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb388-1"><a href="figurer-1.html#cb388-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dotchart</span>(gapminderEurope2015decreasing<span class="sc">$</span>life_expectancy, </span>
 <span id="cb388-2"><a href="figurer-1.html#cb388-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">labels=</span> gapminderEurope2015decreasing<span class="sc">$</span>country,  </span>
 <span id="cb388-3"><a href="figurer-1.html#cb388-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">las =</span> <span class="dv">2</span>,</span>
 <span id="cb388-4"><a href="figurer-1.html#cb388-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">cex =</span> <span class="fl">0.8</span>,</span>
 <span id="cb388-5"><a href="figurer-1.html#cb388-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">xlab =</span> <span class="st">&quot;Life expectancy (years)&quot;</span>,<span class="at">col =</span> <span class="fu">as.character</span>(gapminderEurope2015<span class="sc">$</span>color))</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-371-3.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-371-3.png" width="768" style="display: block; margin: auto;" /></p>
 </div>
 </div>
 <div id="cirkeldigram" class="section level2 hasAnchor" number="8.4">
@@ -557,7 +557,7 @@ Visa figurkod
 <span id="cb389-3"><a href="figurer-1.html#cb389-3" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(df<span class="sc">$</span>gripstrength, <span class="at">xlab=</span><span class="st">&quot;Greppstyrka (Newton)&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Antal&quot;</span>, <span class="at">breaks=</span><span class="dv">14</span>, <span class="at">main=</span><span class="st">&quot;14 klasser&quot;</span>)</span>
 <span id="cb389-4"><a href="figurer-1.html#cb389-4" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(df<span class="sc">$</span>gripstrength, <span class="at">xlab=</span><span class="st">&quot;Greppstyrka (Newton)&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Antal&quot;</span>, <span class="at">breaks=</span><span class="dv">28</span>, <span class="at">main=</span><span class="st">&quot;28 klasser&quot;</span>)</span>
 <span id="cb389-5"><a href="figurer-1.html#cb389-5" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(df<span class="sc">$</span>gripstrength, <span class="at">xlab=</span><span class="st">&quot;Greppstyrka (Newton)&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Antal&quot;</span>, <span class="at">breaks=</span><span class="dv">56</span>, <span class="at">main=</span><span class="st">&quot;56 klasser&quot;</span>)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-372-1.png" width="768" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-372-1.png" width="768" style="display: block; margin: auto;" /></p>
 </div>
 <div id="lådagram-1" class="section level2 hasAnchor" number="8.6">
 <h2><span class="header-section-number">8.6</span> Lådagram<a href="figurer-1.html#lådagram-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
@@ -565,16 +565,16 @@ Visa figurkod
 Att använda lådagram för en enda variabel är inte optimalt, utan histogram ger då mer information.</p>
 <p>Vi vill studera testresultat uppdelat på psykologisk bedämning</p>
 <div class="sourceCode" id="cb390"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb390-1"><a href="figurer-1.html#cb390-1" aria-hidden="true" tabindex="-1"></a><span class="fu">boxplot</span>(df<span class="sc">$</span>gripstrength<span class="sc">~</span>df<span class="sc">$</span>psych, <span class="at">xlab=</span><span class="st">&quot;Psykologisk bedömning (1-9)&quot;</span>, <span class="at">ylab=</span><span class="st">&quot;Greppstyrka (Newton)&quot;</span>)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-373-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-373-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>
 <div id="spridningsdiagram-1" class="section level2 hasAnchor" number="8.7">
 <h2><span class="header-section-number">8.7</span> Spridningsdiagram<a href="figurer-1.html#spridningsdiagram-1" class="anchor-section" aria-label="Anchor link to header"></a></h2>
 <p>Den vanligaste funktionen i R för att skapa figurer är <strong><code>plot()</code></strong>. Det finns många argument och i det närmaste obegränsade möjligher att anpassa figurerna.</p>
 <p>Nedan visar vi ett problem som kan uppkomma med spridningsdiagram, nämligen när vi har väldigt många datapunkter. Det första diagrammet redovisar de 500 första individerna i INSARK. Det andra diagrammet redovisar data från alla 709869 individer.</p>
 <div class="sourceCode" id="cb391"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb391-1"><a href="figurer-1.html#cb391-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(df<span class="sc">$</span>legstrength[<span class="dv">1</span><span class="sc">:</span><span class="dv">500</span>], df<span class="sc">$</span>armstrength[<span class="dv">1</span><span class="sc">:</span><span class="dv">500</span>], <span class="at">xlab =</span> <span class="st">&quot;Benstyrka (Newton)&quot;</span>, <span class="at">ylab =</span> <span class="st">&quot;Armstyrka (Newton)&quot;</span>)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-374-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-374-1.png" width="672" style="display: block; margin: auto;" /></p>
 <div class="sourceCode" id="cb392"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb392-1"><a href="figurer-1.html#cb392-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(df<span class="sc">$</span>legstrength, df<span class="sc">$</span>armstrength, <span class="at">xlab =</span> <span class="st">&quot;Benstyrka (Newton)&quot;</span>, <span class="at">ylab =</span> <span class="st">&quot;Armstyrka (Newton)&quot;</span>)</span></code></pre></div>
-<p><img src="_main_files/figure-html/unnamed-chunk-374-2.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="docs/images/unnamed-chunk-374-2.png" width="672" style="display: block; margin: auto;" /></p>
 <p>Det blir, i det senare diagrammet, svårt att urskilja mönster eller trender i diagrammet, eftersom punkterna är så många. Denna problematik kommer lyftas fram mer under senare delar av kursen.</p>
 </div>
 <div id="exportera-figurer" class="section level2 hasAnchor" number="8.8">
